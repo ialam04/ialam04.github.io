@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ialam04.github.io/sitemap.xml
+
+# Disallow sensitive files
+Disallow: /.git/
+Disallow: /README.md
+
+# Allow common crawl paths
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /assets/
