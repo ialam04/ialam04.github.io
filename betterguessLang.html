@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterGuessLang - Ibrahim Alam</title>
+    <meta name="description" content="BetterGuessLang: Advancing Lightweight AI for Programming Language Identification - Research project at LSU AISX Lab">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .project-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .project-hero .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+        
+        .project-hero .advisor {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        .section h3 {
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: 600;
+        }
+        
+        .section p, .section li {
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .section ul {
+            padding-left: 1.5rem;
+        }
+        
+        .section li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .back-nav {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 1000;
+        }
+        
+        .back-nav a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.8rem 1.2rem;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .back-nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .metric-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .metric-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+        
+        .metric-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .project-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .back-nav {
+                top: 1rem;
+                left: 1rem;
+            }
+            
+            .project-content {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="back-nav">
+        <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+            Back to Portfolio
+        </a>
+    </nav>
+
+    <header class="project-hero">
+        <div class="container">
+            <h1>BetterGuessLang</h1>
+            <p class="subtitle">Advancing Lightweight AI for Programming Language Identification</p>
+            <p class="advisor">AISX Lab, Louisiana State University – Faculty Advisor: Dr. James Ghawaly</p>
+        </div>
+    </header>
+
+    <main class="project-content">
+        <section class="section">
+            <h2>Overview</h2>
+            <p>
+                BetterGuessLang is a research initiative focused on improving programming language identification through encoder-only models. The project aims to design efficient, scalable, and accurate language classification systems that advance the field of software engineering and code understanding.
+            </p>
+            
+            <div class="highlight-box">
+                <strong>Research Focus:</strong> Developing next-generation AI models for accurate, lightweight programming language detection that can handle the complexity and diversity of modern codebases.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Motivation</h2>
+            <p>
+                Existing tools such as GuessLang and GitHub Linguist provide limited accuracy and scalability when faced with modern, diverse codebases. BetterGuessLang addresses this gap by leveraging deep learning techniques to enhance generalization, handle multilingual repositories, and maintain lightweight model architectures suitable for real-world deployment.
+            </p>
+            
+            <h3>Key Challenges Addressed</h3>
+            <ul>
+                <li><strong>Limited Accuracy:</strong> Current tools struggle with ambiguous code snippets and mixed-language files</li>
+                <li><strong>Scalability Issues:</strong> Existing solutions don't scale well to large, diverse codebases</li>
+                <li><strong>Model Efficiency:</strong> Need for lightweight models that maintain high accuracy while being deployment-ready</li>
+                <li><strong>Dataset Limitations:</strong> Lack of comprehensive, diverse training datasets for modern programming languages</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Approach</h2>
+            
+            <h3>Model Architecture</h3>
+            <p>
+                Training and evaluating multiple encoder-only transformer models to identify programming languages from raw code snippets. Our approach focuses on lightweight architectures that can be efficiently deployed in production environments while maintaining state-of-the-art accuracy.
+            </p>
+
+            <h3>Dataset Development</h3>
+            <p>
+                Initially leveraging the GuessLang dataset while constructing a much larger custom dataset exceeding <strong>500 million code samples</strong>, designed to capture language diversity, syntax variability, and real-world code structures.
+            </p>
+            
+            <div class="metrics">
+                <div class="metric-card">
+                    <span class="metric-number">500M+</span>
+                    <p class="metric-label">Code Samples</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">50+</span>
+                    <p class="metric-label">Programming Languages</p>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-number">Multi-GPU</span>
+                    <p class="metric-label">Distributed Training</p>
+                </div>
+            </div>
+
+            <h3>Training & Evaluation</h3>
+            <ul>
+                <li><strong>Distributed Training:</strong> Implementing distributed training across multiple GPUs for efficient model development</li>
+                <li><strong>Comprehensive Evaluation:</strong> Developing a unified evaluation pipeline to compare model families, including our in-house trained models, pre-trained encoders, GuessLang, and GitHub Linguist</li>
+                <li><strong>Scalable Infrastructure:</strong> Using PyTorch and Hugging Face infrastructures for experimentation and reproducibility</li>
+                <li><strong>Experiment Tracking:</strong> Leveraging Weights & Biases (W&B) for comprehensive experiment tracking, hyperparameter optimization, and model performance visualization</li>
+            </ul>
+
+            <h3>Technical Stack</h3>
+            <div class="tech-stack">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Hugging Face Transformers</span>
+                <span class="tech-tag">Weights & Biases</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">CUDA</span>
+                <span class="tech-tag">Multi-GPU Training</span>
+                <span class="tech-tag">Transformer Models</span>
+                <span class="tech-tag">NLP</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Research Goals</h2>
+            <ul>
+                <li><strong>Unified Benchmark:</strong> Establish a comprehensive benchmark for lightweight transformer models in programming language identification</li>
+                <li><strong>Improved Interpretability:</strong> Enhance model interpretability to understand decision-making processes in code classification</li>
+                <li><strong>Computational Efficiency:</strong> Achieve optimal balance between accuracy and computational requirements for real-world deployment</li>
+                <li><strong>Downstream Applications:</strong> Support AI-driven software analysis, development tools, and automated code understanding systems</li>
+                <li><strong>Open Source Contribution:</strong> Provide the research community with improved tools and datasets for programming language identification</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Impact & Applications</h2>
+            <p>
+                BetterGuessLang has the potential to significantly impact various areas of software engineering and development:
+            </p>
+            <ul>
+                <li><strong>IDE Integration:</strong> Enhanced language detection for code editors and development environments</li>
+                <li><strong>Repository Analysis:</strong> Improved accuracy in analyzing large, multi-language codebases</li>
+                <li><strong>Code Search & Discovery:</strong> Better language-aware code search and recommendation systems</li>
+                <li><strong>AI Code Tools:</strong> Foundation for more accurate AI-powered code analysis and generation tools</li>
+                <li><strong>Security Analysis:</strong> Enhanced capability for automated security scanning across different programming languages</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
