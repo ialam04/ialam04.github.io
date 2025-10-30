@@ -570,37 +570,22 @@
                         <div class="written-sample">
                             <p>PECAN (Programming Encoder Classification Analysis Network) represents my commitment to developing AI systems that balance performance with accessibility. Working with Dr. James Ghawaly in the AISX Lab alongside research collaborator Jackson Descant, I am fine-tuning small encoder-only models to identify programming languages with greater accuracy than current state-of-the-art tools.</p>
                             
-                            <p>The challenge in programming language identification lies not just in achieving high accuracy, but in doing so with models that are lightweight and deployable. Existing tools like GuessLang and GitHub Linguist achieve approximately 90% accuracy, but struggle with modern, diverse codebases. PECAN addresses this gap by leveraging transformer-based architectures, specifically fine-tuning models like CodeBERT on a dataset of over 10 million code samples across 54+ programming languages, with plans for continued expansion.</p>
-                            
-                            <p>Our approach has achieved 99.7% accuracy, demonstrating that smaller, well-designed models can deliver state-of-the-art performance. This work reinforces my conviction that AI systems should strike a balance between accessibility and performance. We are currently preparing a submission to an A* conference, contributing to the broader understanding of how efficient model design can advance software engineering tools.</p>
-                            
-                            <p>PECAN embodies my belief that AI should empower rather than replace human expertise, providing developers with more accurate tools while maintaining computational efficiency.</p>
+                            <p>Our approach has achieved <strong>99.7% accuracy</strong> across 54+ programming languages using 10+ million code samples, demonstrating that smaller, well-designed models can deliver state-of-the-art performance while maintaining computational efficiency.</p>
                         </div>
-                        <a href="pecan.html" class="evidence-link">Read Full Research Page →</a>
+                        <a href="pecan.html" class="evidence-link">Read Full Research Details →</a>
                     </div>
 
                     <div class="evidence-card">
                         <i class="fas fa-blog evidence-icon"></i>
-                        <h4>Technical Documentation</h4>
+                        <h4>Technical Documentation - MikeGPT</h4>
                         <div class="written-sample">
-                            <h5>MikeGPT: Retrieval-Augmented Generation Architecture</h5>
+                            <p><strong>MikeGPT: Retrieval-Augmented Generation Architecture</strong></p>
                             
-                            <p>MikeGPT is an AI assistant designed to provide accurate, contextual responses to LSU community queries by combining large language model capabilities with institution-specific knowledge retrieval.</p>
+                            <p>MikeGPT is an AI assistant designed to provide accurate, contextual responses to LSU community queries by combining large language model capabilities with institution-specific knowledge retrieval. The system implements a sophisticated RAG pipeline achieving <strong>95% accuracy</strong> while serving <strong>30,000+ users</strong> across 38,000+ university documents.</p>
                             
-                            <p><strong>System Architecture Overview:</strong> The system implements a retrieval-augmented generation (RAG) pipeline that preprocesses, indexes, and retrieves relevant information from 38,000+ LSU documents before generating responses. This architecture prioritizes retrieval design over model size, enabling accurate responses while maintaining computational efficiency.</p>
-                            
-                            <p><strong>Core Components:</strong></p>
-                            <ul>
-                                <li><strong>Document Processing Pipeline:</strong> Ingests and preprocesses university documents (PDFs, web pages, policies) into structured, searchable formats. Implements OCR for scanned documents and metadata extraction for improved retrieval.</li>
-                                <li><strong>Vector Database:</strong> PostgreSQL with pgvector extension stores document embeddings, enabling semantic search capabilities. Documents are chunked strategically to balance context preservation with retrieval precision.</li>
-                                <li><strong>Retrieval Algorithm:</strong> Custom optimization balancing semantic similarity with recency and authority signals. Achieved 95% hit rate through iterative refinement of ranking functions and query expansion techniques.</li>
-                                <li><strong>Response Generation:</strong> Integrates retrieved context with LLM prompting, ensuring responses cite source documents and maintain factual accuracy. Implements guardrails preventing hallucination and inappropriate content.</li>
-                            </ul>
-                            
-                            <p><strong>Technical Stack:</strong> Python, Django, PostgreSQL (pgvector), Azure Cloud Services, Redis caching</p>
-                            
-                            <p><strong>Impact:</strong> Currently serving 30,000+ LSU community members with domain-specific AI assistance, demonstrating that thoughtful RAG architecture can deliver production-grade AI systems without requiring massive model sizes.</p>
+                            <p>This architecture demonstrates that thoughtful retrieval design can deliver production-grade AI systems without requiring massive model sizes, validating my belief that AI should empower rather than replace human expertise.</p>
                         </div>
+                        <a href="mikegpt.html" class="evidence-link">Read Full Technical Documentation →</a>
                     </div>
 
                     <div class="evidence-card">
@@ -608,7 +593,7 @@
                         <h4>Discover Day Presentation</h4>
                         <p>MikeGPT: Enhancing LSU with AI - Co-authored presentation demonstrating collaborative communication.</p>
                         <div class="citation">
-                            <p><strong>Citation:</strong> Alam I, Walton B, Gray C. MikeGPT: Enhancing LSU with AI. 
+                            <p><strong>Citation:</strong> Alam I, Baral B, Nguyen J. MikeGPT: Enhancing LSU with AI. 
                             <em>LSU Discover Day Undergraduate Research and Creativity Conference.</em> 2025 April 25; 
                             Louisiana State University, Baton Rouge, Louisiana.</p>
                         </div>
@@ -784,7 +769,7 @@
                         
                         <p>My mentoring philosophy centers on making advanced technical concepts accessible rather than intimidating. When students struggle with implementing retrieval-augmented generation or fine-tuning models, I don't just provide answers—I ask questions that guide them toward understanding. I've learned to recognize different learning styles: some students need visual diagrams, others prefer walking through code line-by-line, while some learn best through debugging real problems together.</p>
                         
-                        <p>One particularly rewarding moment came when a student team was struggling with their vector database implementation. Rather than fixing it myself, I facilitated a discussion where they identified the issue through systematic troubleshooting. Watching their confidence grow as they debugged the solution themselves was more valuable than any quick fix I could have provided.</p>
+                        <p>One particularly rewarding moment came when a student team was struggling with building evaluation pipelines for their RAG systems and models. Rather than fixing it myself, I facilitated a discussion where they identified the issues through systematic troubleshooting. Watching their confidence grow as they debugged the solution themselves was more valuable than any quick fix I could have provided. This experience was so impactful that I'm now preparing to lecture on evaluation pipeline design, sharing these practical insights with the entire class.</p>
                         
                         <p>Teaching has taught me patience, adaptability, and the art of explaining complexity simply. More importantly, it has reinforced my belief that education is about empowering others to solve problems independently—a philosophy that aligns perfectly with my vision of AI as a tool for augmentation rather than replacement.</p>
                     </div>
@@ -962,7 +947,7 @@
                     <div class="credit-category">
                         <h4>Project Collaborators</h4>
                         <ul>
-                            <li><strong>MikeGPT Team:</strong> Brandon Walton, Chloe Gray (Co-developers & Discover Day Co-presenters)</li>
+                            <li><strong>MikeGPT Team:</strong> Jacob Nguyen, Bibushita Baral (Co-collaborators & Discover Day Co-presenters); Dr. James Ghawaly, Brandon Walton, Chloe Gray (Co-collaborators)</li>
                             <li><strong>PECAN Research:</strong> Jackson Descant (Research Collaborator)</li>
                             <li><strong>Nexus Louisiana ClimateTech:</strong> Cross-functional development team</li>
                             <li><strong>Tri-Core Technologies:</strong> Louisiana Department of Insurance development team</li>
