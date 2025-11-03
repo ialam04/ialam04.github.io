@@ -1283,12 +1283,14 @@ section:not(.hero) {
 .portfolio-video {
     width: 100%;
     max-width: 600px;
+    max-height: 400px;
     height: auto;
     border-radius: var(--radius-md);
     margin: 1rem auto;
     display: block;
     box-shadow: var(--shadow-medium);
     background: #000;
+    object-fit: contain;
 }
 
 .portfolio-video:focus {
