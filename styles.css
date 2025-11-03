@@ -1279,6 +1279,23 @@ section:not(.hero) {
     transform: scale(1.02);
 }
 
+/* Portfolio Videos */
+.portfolio-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: var(--radius-md);
+    margin: 1rem auto;
+    display: block;
+    box-shadow: var(--shadow-medium);
+    background: #000;
+}
+
+.portfolio-video:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
 /* Placeholder Styles */
 .video-placeholder,
 .image-placeholder {
