@@ -305,6 +305,11 @@ a:hover {
     color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     font-weight: var(--font-weight-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.25rem;
+    text-align: center;
 }
 
 .hero-description {
@@ -573,10 +578,50 @@ a:hover {
     background: var(--background-alt);
 }
 
+.projects-intro {
+    max-width: 850px;
+    margin: 0 auto var(--spacing-2xl);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.project-groups {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+.project-group-title {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.project-group-title::before {
+    content: '';
+    width: 2.5rem;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: var(--radius-sm);
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: var(--spacing-lg);
+}
+
+.projects-grid-featured {
+    margin-bottom: var(--spacing-lg);
+}
+
+.projects-grid-sub {
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 }
 
 .project-card {
@@ -1072,6 +1117,15 @@ a:hover {
     .project-card.featured {
         grid-column: 1;
     }
+
+    .project-group-title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .project-group-title::before {
+        display: none;
+    }
     
     .project-stats {
         justify-content: center;
@@ -1296,6 +1350,32 @@ section:not(.hero) {
 .portfolio-video:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    margin: 1rem auto;
+    background: #000;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.evidence-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 0.75rem;
 }
 
 /* Placeholder Styles */
