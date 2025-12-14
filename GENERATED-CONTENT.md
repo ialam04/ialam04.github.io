@@ -120,7 +120,7 @@ Working on MikeGPT at LSU taught me that handling user data is a profound respon
 
 **Bias, Fairness, and Representation**
 
-In developing PECAN, training on 10+ million code samples across 54 languages, I've grappled with questions of representation and bias. Which programming languages receive priority? How do we ensure our model performs equitably across different coding styles and conventions? These aren't just technical challenges—they're ethical ones. We've worked deliberately to ensure diverse language representation, recognizing that algorithmic fairness requires intentional design choices, not just technical optimization.
+In developing PECAN, training on 42+ million code samples across 319 languages, I've grappled with questions of representation and bias. Which programming languages receive priority? How do we ensure our model performs equitably across different coding styles and conventions? These aren't just technical challenges—they're ethical ones. We've worked deliberately to ensure diverse language representation, recognizing that algorithmic fairness requires intentional design choices, not just technical optimization.
 
 **Accountability and Transparency**
 

@@ -133,7 +133,7 @@ Gather 3 images:
 #### **4. Quick PECAN Description (30 min):**
 Just write 200 words:
 - What PECAN does (programming language identification)
-- Your approach (transformers, 54 languages, expanding)
+- Your approach (transformers, 319 languages, expanding)
 - Your results (99.7% accuracy)
 - Why it matters (better software tools, code analysis)
 
