@@ -170,7 +170,7 @@ PECAN ABSTRACT:
 4. **Clear Navigation** - Easy to find everything
 5. **Proper Attribution** - Complete credits and acknowledgments
 6. **Synthesis & Growth** - Connects experiences meaningfully
-7. **Real Impact** - Quantified achievements (30K users, 99.7% accuracy, etc.)
+7. **Real Impact** - Quantified achievements (30K users, 99.5% accuracy, etc.)
 
 ---
 

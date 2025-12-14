@@ -134,7 +134,7 @@ Replace with:
     <img src="assets/portfolio/pecan-visualization.png" 
          alt="PECAN model accuracy comparison" 
          style="width: 100%; border-radius: 8px;">
-    <p class="image-caption">PECAN achieves 99.7% accuracy across 54+ programming languages</p>
+    <p class="image-caption">PECAN achieves 99.5% accuracy across 54+ programming languages</p>
 </div>
 ```
 

@@ -91,7 +91,7 @@ OR
 ### Fastest Path to Completion (30-45 minutes):
 
 1. **Right now:** Record 30-second intro on your phone
-   - "Hi, I'm Ibrahim Alam, CS/Math student at LSU. I research AI/ML in the AISX Lab, where we achieved 99.7% accuracy with PECAN. I believe AI should enhance, not replace, human creativity. I practice servant leadership through teaching and tech projects for social good."
+   - "Hi, I'm Ibrahim Alam, CS/Math student at LSU. I research AI/ML in the AISX Lab, where we achieved 99.5% accuracy with PECAN. I believe AI should enhance, not replace, human creativity. I practice servant leadership through teaching and tech projects for social good."
 
 2. **Find one screenshot:** 
    - From PECAN research (any graph or chart)

@@ -12,7 +12,7 @@ I've successfully integrated **all 9 pieces of written content** (2,450 words to
 
 1. **PECAN Research Abstract** (200 words)
    - Location: Written Communication → Research Abstract card
-   - Content: Problem statement, methodology, 99.7% accuracy results, impact
+   - Content: Problem statement, methodology, 99.5% accuracy results, impact
    - Emphasizes: AI systems balancing accessibility with performance
 
 2. **MikeGPT Technical Documentation** (220 words)
@@ -102,7 +102,7 @@ That's literally it! Everything else is done.
 
 Your integrated content showcases:
 
-- **Research Excellence**: PECAN achieving 99.7% accuracy
+- **Research Excellence**: PECAN achieving 99.5% accuracy
 - **Production Experience**: MikeGPT serving 30,000+ users
 - **Leadership Growth**: 4 detailed role reflections
 - **Philosophical Depth**: I, Robot themes throughout

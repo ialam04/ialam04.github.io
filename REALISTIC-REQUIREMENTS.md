@@ -95,7 +95,7 @@
 
 #### **1. Video (30 min):**
 Record on your phone:
-> "Hi, I'm Ibrahim Alam, a Computer Science student at LSU. I'm passionate about AI and have been working on PECAN research, achieving 99.7% accuracy in programming language identification. I've also deployed AI systems like MikeGPT that serve 30,000+ LSU community members. Through my research, internships, and leadership roles, I've learned that effective communication is essential for translating complex technical concepts into real-world impact. This portfolio showcases my journey in combining technical excellence with clear communication and servant leadership."
+> "Hi, I'm Ibrahim Alam, a Computer Science student at LSU. I'm passionate about AI and have been working on PECAN research, achieving 99.5% accuracy in programming language identification. I've also deployed AI systems like MikeGPT that serve 30,000+ LSU community members. Through my research, internships, and leadership roles, I've learned that effective communication is essential for translating complex technical concepts into real-world impact. This portfolio showcases my journey in combining technical excellence with clear communication and servant leadership."
 
 **That's it. Done. ✅**
 
@@ -134,7 +134,7 @@ Gather 3 images:
 Just write 200 words:
 - What PECAN does (programming language identification)
 - Your approach (transformers, 319 languages, expanding)
-- Your results (99.7% accuracy)
+- Your results (99.5% accuracy)
 - Why it matters (better software tools, code analysis)
 
 **Literally can adapt from what's already on your PECAN page. ✅**

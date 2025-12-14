@@ -46,7 +46,7 @@ This document outlines all content you need to add to complete your CXC portfoli
 - Problem: Why is programming language identification important?
 - Your approach: Transformer models, encoder-only architecture
 - Methodology: Dataset size (10M+ samples), training process
-- Results: 99.7% accuracy across 100+ languages
+- Results: 99.5% accuracy across 100+ languages
 - Impact: How this advances the field
 
 **Where it goes:** Portfolio > Written Communication section

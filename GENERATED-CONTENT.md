@@ -10,7 +10,7 @@ PECAN (Programming Encoder Classification Analysis Network) represents my commit
 
 The challenge in programming language identification lies not just in achieving high accuracy, but in doing so with models that are lightweight and deployable. Existing tools like GuessLang and GitHub Linguist achieve approximately 90% accuracy, but struggle with modern, diverse codebases. PECAN addresses this gap by leveraging transformer-based architectures, specifically fine-tuning models like CodeBERT on a dataset of over 10 million code samples across 54+ programming languages, with plans for continued expansion.
 
-Our approach has achieved 99.7% accuracy, demonstrating that smaller, well-designed models can deliver state-of-the-art performance. This work reinforces my conviction that AI systems should strike a balance between accessibility and performance. We are currently preparing a submission to an A* conference, contributing to the broader understanding of how efficient model design can advance software engineering tools.
+Our approach has achieved 99.5% accuracy, demonstrating that smaller, well-designed models can deliver state-of-the-art performance. This work reinforces my conviction that AI systems should strike a balance between accessibility and performance. We are currently preparing a submission to an A* conference, contributing to the broader understanding of how efficient model design can advance software engineering tools.
 
 PECAN embodies my belief that AI should empower rather than replace human expertise, providing developers with more accurate tools while maintaining computational efficiency.
 
@@ -38,7 +38,7 @@ My journey in computer science has been defined by a single question: How can AI
 
 **Research as Foundation**
 
-In Dr. James Ghawaly's AISX Lab, working on both MikeGPT and PECAN (formerly BetterGuessLang), I've learned that effective AI requires more than achieving high accuracy—it requires thoughtful design that considers real-world constraints. MikeGPT taught me that retrieval design matters more than model size, a lesson that directly informed my approach to PECAN. When we achieved 99.7% accuracy with a smaller encoder-only model, it validated my conviction that accessibility and performance need not be mutually exclusive. These research experiences have given me a rigorous foundation in NLP, information retrieval, and model evaluation.
+In Dr. James Ghawaly's AISX Lab, working on both MikeGPT and PECAN (formerly BetterGuessLang), I've learned that effective AI requires more than achieving high accuracy—it requires thoughtful design that considers real-world constraints. MikeGPT taught me that retrieval design matters more than model size, a lesson that directly informed my approach to PECAN. When we achieved 99.5% accuracy with a smaller encoder-only model, it validated my conviction that accessibility and performance need not be mutually exclusive. These research experiences have given me a rigorous foundation in NLP, information retrieval, and model evaluation.
 
 **Industry as Application**
 

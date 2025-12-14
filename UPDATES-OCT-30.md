@@ -29,7 +29,7 @@
 - ✅ **mikegpt.html** - NEW dedicated page for MikeGPT technical documentation
 
 **Updated Portfolio Cards:**
-- **PECAN Card:** Condensed to 2 paragraphs with key highlights (99.7% accuracy, 54+ languages)
+- **PECAN Card:** Condensed to 2 paragraphs with key highlights (99.5% accuracy, 54+ languages)
 - **MikeGPT Card:** Condensed to 3 paragraphs with key metrics (95% accuracy, 30,000+ users, 38,000+ docs)
 - Both cards now have clear "Read Full [Details/Documentation] →" links
 

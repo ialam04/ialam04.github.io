@@ -14,7 +14,7 @@
 
 > "Hi, I'm Ibrahim Alam, a Computer Science student at Louisiana State University and an LSU Stamps Scholar. 
 > 
-> I'm passionate about using artificial intelligence to solve real-world problems. Currently, I'm conducting research at the AISX Lab, where I'm developing PECAN - a system that achieves 99.7% accuracy in identifying programming languages. 
+> I'm passionate about using artificial intelligence to solve real-world problems. Currently, I'm conducting research at the AISX Lab, where I'm developing PECAN - a system that achieves 99.5% accuracy in identifying programming languages. 
 >
 > Beyond research, I've deployed AI systems that serve over 30,000 people at LSU, demonstrating my commitment to making technology accessible and impactful.
 >
@@ -35,7 +35,7 @@
 "Programming language identification is critical for [why it matters]. Existing tools like GuessLang and GitHub Linguist achieve only 90% accuracy..."
 
 **Paragraph 2 - Your Solution:**
-"PECAN (Programming Encoder Classification Analysis Network) uses transformer-based models... trained on 10M+ code samples... achieving 99.7% accuracy across 100+ languages..."
+"PECAN (Programming Encoder Classification Analysis Network) uses transformer-based models... trained on 10M+ code samples... achieving 99.5% accuracy across 100+ languages..."
 
 **Paragraph 3 - Impact:**
 "This research has implications for [IDE integration, code analysis, software engineering tools]... Currently preparing paper for submission to top-tier ML conference..."
