@@ -218,13 +218,11 @@
             </ul>
             
             <h4>3. Retrieval Algorithm</h4>
-            <p>Custom-designed retrieval system achieving 95% hit rate through:</p>
+            <p>Our RAG pipeline picks retrieval methods per agent. The main Mike agent uses a self-guided navigational search (from an AISX Lab paper) that iteratively gathers the best context before generation.</p>
             <ul>
-                <li><strong>Semantic Similarity:</strong> Vector-based matching identifies conceptually related content</li>
-                <li><strong>Recency Signals:</strong> Weights recent information higher for time-sensitive queries</li>
-                <li><strong>Authority Ranking:</strong> Official sources and verified information receive priority</li>
-                <li><strong>Query Expansion:</strong> Iterative refinement techniques improve recall on complex queries</li>
-                <li><strong>Multi-stage Ranking:</strong> Combines multiple scoring functions for optimal relevance</li>
+                <li><strong>Agent-Specific Retrieval:</strong> Each agent selects the retrieval style that fits its task (e.g., FAQ keywording, syllabus filters, or navigational search)</li>
+                <li><strong>Self-Guided Navigation:</strong> Mike refines its own lookups step by step to reach the most relevant sources</li>
+                <li><strong>Grounded Responses:</strong> Retrieved context is kept with the answer so users can see what was used</li>
             </ul>
             
             <h4>4. Response Generation</h4>
