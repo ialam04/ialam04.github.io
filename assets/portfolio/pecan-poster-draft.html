@@ -6,12 +6,13 @@
   <title>PECAN Poster Draft</title>
   <style>
     :root {
-      --primary: #2563eb;
-      --secondary: #7c3aed;
-      --text: #0f172a;
-      --muted: #475569;
+      --primary: #6d28d9;
+      --secondary: #a855f7;
+      --text: #1f2937;
+      --muted: #6b7280;
       --bg: #ffffff;
-      --border: #e2e8f0;
+      --border: #e5e7eb;
+      --panel: #f5f3ff;
     }
 
     @page {
@@ -95,10 +96,10 @@
     }
 
     .section {
-      border: 2px solid var(--border);
+      border: 2px solid var(--secondary);
       border-radius: 18px;
       padding: 1rem 1.25rem;
-      background: #ffffff;
+      background: var(--panel);
     }
 
     .section h3 {
@@ -131,6 +132,7 @@
       border-radius: 12px;
       padding: 0.75rem;
       text-align: center;
+      background: #ffffff;
     }
 
     .metric .value {
@@ -234,7 +236,12 @@
           We leverage GuessLang and a larger custom dataset with 42 million+ code samples spanning
           319 languages to capture syntax variability and real-world repository diversity.
         </p>
-        <div class="placeholder">Placeholder: Dataset diagram or language distribution chart.</div>
+        <div style="margin-top: 0.75rem;">
+          <img src="pecan-language-distribution.svg" alt="Top language distribution from Pecan512 train split (partial stats)" style="width: 100%; border-radius: 12px; border: 2px solid #e2e8f0;">
+          <p style="font-size: 1rem; color: #64748b; margin-top: 0.5rem;">
+            Source: Hugging Face dataset server stats (partial) for Pecan512 train split.
+          </p>
+        </div>
       </div>
 
       <div class="section">
