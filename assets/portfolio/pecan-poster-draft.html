@@ -184,15 +184,7 @@
       <div class="section">
         <h3>Abstract</h3>
         <p>
-          PECAN advances lightweight, accurate programming language identification using encoder-only
-          neural models. We design, train, and rigorously evaluate efficient transformer encoders that
-          classify programming languages from raw code snippets while maintaining strong generalization
-          across diverse, modern codebases.
-        </p>
-        <p>
-          We address limitations of heuristic tools like GuessLang and GitHub Linguist by building a
-          unified experimental framework that compares encoder-only model families for accuracy,
-          efficiency, and robustness on large-scale datasets.
+          PECAN (Programming Encoder Classification Analysis Network) is a research project focused on advancing lightweight, accurate programming language identification using encoder-only neural models. The goal of this research is to design, train, and rigorously evaluate efficient transformer-based encoders that can classify programming languages using raw code snippets, while maintaining strong generalization across diverse and modern codebases. Current language identification tools such as GuessLang and GitHub Linguist rely on heuristic-based methods or limited model architectures, which often struggle with ambiguous snippets, mixed-language repositories, and large-scale datasets. This project addresses these limitations by developing a unified experimental framework that evaluates encoder-only deep learning models across a broad and diverse corpus of programming languages with respect to accuracy, efficiency, and robustness. The research leverages an existing large-scale dataset of over 42 million code samples spanning more than 300 programming languages, alongside established benchmarks such as GuessLang. Training is conducted using PyTorch and Hugging Face Transformers, with distributed multi-GPU execution to ensure scalability. A comprehensive evaluation pipeline is implemented to compare performance, efficiency, and robustness across multiple model families, including pre-trained encoders and custom-trained architectures. The outcomes include (1) a systematic benchmark for lightweight programming language identification models, (2) insights into accuracy–efficiency tradeoffs for real-world deployment, and (3) research artifacts suitable for open-source release and potential publication. This work contributes to broader areas of software engineering, code analysis, and AI-assisted development tools.
         </p>
       </div>
 
@@ -237,7 +229,7 @@
           319 languages to capture syntax variability and real-world repository diversity.
         </p>
         <div style="margin-top: 0.75rem;">
-          <img src="pecan-language-distribution.svg" alt="Top language distribution from Pecan512 train split (partial stats)" style="width: 100%; border-radius: 12px; border: 2px solid #e2e8f0;">
+          <img src="pecan-language-distribution.svg" alt="Top language distribution from Pecan512 full dataset" style="width: 100%; border-radius: 12px; border: 2px solid #e2e8f0;">
           <p style="font-size: 1rem; color: #64748b; margin-top: 0.5rem;">
             Source: Pecan512 full dataset distribution (provided counts).
           </p>
@@ -247,10 +239,17 @@
       <div class="section">
         <h3>Evaluation Pipeline</h3>
         <p>
-          A unified evaluation pipeline compares pre-trained encoders and custom-trained architectures
-          across accuracy, efficiency, and robustness. Models are benchmarked on mixed-language
-          repositories and ambiguous code snippets.
+          Evaluation routes depend on the model family. Fine-tuned encoder models are evaluated directly
+          in the unified pipeline. GuessLang runs inside its Docker container, while GitHub Linguist is
+          executed in the same pipeline (no Docker). We also evaluate with highlight.js and GPT OSS
+          baselines for broader comparison.
         </p>
+        <ul>
+          <li><strong>Fine-tuned encoders:</strong> Standard pipeline evaluation (accuracy/efficiency/robustness)</li>
+          <li><strong>GuessLang:</strong> Inference via Dockerized runtime</li>
+          <li><strong>GitHub Linguist:</strong> Pipeline integration without Docker</li>
+          <li><strong>highlight.js / GPT OSS:</strong> Additional baseline checks</li>
+        </ul>
         <svg viewBox="0 0 1000 220" width="100%" height="180" role="img" aria-label="Evaluation pipeline diagram">
           <rect x="10" y="40" width="180" height="90" rx="14" fill="#eef2ff" stroke="#2563eb" stroke-width="4"></rect>
           <text x="100" y="90" text-anchor="middle" font-size="26" fill="#0f172a">Data</text>
@@ -292,7 +291,12 @@
           <li>Quantified accuracy-efficiency tradeoffs for deployment.</li>
           <li>Produced research artifacts for open-source release and publication.</li>
         </ul>
-        <div class="placeholder">Placeholder: Accuracy curve or confusion matrix.</div>
+        <div style="margin-top: 0.75rem;">
+          <img src="W&BChartCodebertSweep.png" alt="CodeBERT fine-tuning sweep accuracy" style="width: 100%; border-radius: 12px; border: 2px solid #e2e8f0;">
+          <p style="font-size: 1rem; color: #64748b; margin-top: 0.5rem;">
+            CodeBERT fine-tuning sweep: eval accuracy over training steps.
+          </p>
+        </div>
       </div>
     </section>
 
