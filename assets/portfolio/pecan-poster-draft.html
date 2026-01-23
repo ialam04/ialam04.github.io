@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PECAN Poster Draft</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #7c3aed;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    @page {
+      size: 48in 36in;
+      margin: 0.5in;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", Arial, sans-serif;
+    }
+
+    .poster {
+      width: 48in;
+      min-height: 36in;
+      box-sizing: border-box;
+      padding: 0.75in;
+    }
+
+    .draft-banner {
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      color: var(--secondary);
+      border: 4px dashed var(--secondary);
+      padding: 0.5rem 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .title h1 {
+      font-size: 4.2rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .title h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0 0 0.75rem 0;
+      color: var(--muted);
+    }
+
+    .meta {
+      font-size: 1.3rem;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .section {
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      padding: 1rem 1.25rem;
+      background: #ffffff;
+    }
+
+    .section h3 {
+      margin: 0 0 0.75rem 0;
+      font-size: 2rem;
+      color: var(--primary);
+    }
+
+    .section p,
+    .section li {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      margin: 0 0 0.75rem 0;
+    }
+
+    .section ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .metric {
+      border: 2px solid var(--primary);
+      border-radius: 12px;
+      padding: 0.75rem;
+      text-align: center;
+    }
+
+    .metric .value {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .metric .label {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1rem;
+    }
+
+    .placeholder {
+      border: 2px dashed var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="draft-banner">Draft</div>
+
+    <header class="title">
+      <h1>PECAN: Programming Encoder Classification Analysis Network</h1>
+      <h2>Lightweight Transformer Encoders for Programming Language Identification</h2>
+      <div class="meta">
+        Ibrahim Alam · Dr. James Ghawaly · Jackson Descant<br>
+        AISX Lab · Louisiana State University
+      </div>
+      <div class="meta">Stanford Research Conference 2026</div>
+      <div style="margin-top: 0.75rem;">
+        <img src="lsu-logo-1-2.png" alt="Louisiana State University logo" style="height: 90px;">
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="section">
+        <h3>Abstract</h3>
+        <p>
+          PECAN advances lightweight, accurate programming language identification using encoder-only
+          neural models. We design, train, and rigorously evaluate efficient transformer encoders that
+          classify programming languages from raw code snippets while maintaining strong generalization
+          across diverse, modern codebases.
+        </p>
+        <p>
+          We address limitations of heuristic tools like GuessLang and GitHub Linguist by building a
+          unified experimental framework that compares encoder-only model families for accuracy,
+          efficiency, and robustness on large-scale datasets.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Motivation</h3>
+        <ul>
+          <li>Existing systems struggle with ambiguous snippets and mixed-language repositories.</li>
+          <li>Large-scale codebases demand scalable, efficient classifiers.</li>
+          <li>Lightweight models enable production deployment without sacrificing accuracy.</li>
+        </ul>
+        <div class="metrics">
+          <div class="metric">
+            <div class="value">42M+</div>
+            <div class="label">Code Samples</div>
+          </div>
+          <div class="metric">
+            <div class="value">319</div>
+            <div class="label">Languages</div>
+          </div>
+          <div class="metric">
+            <div class="value">99.5%</div>
+            <div class="label">Accuracy</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Approach</h3>
+        <ul>
+          <li>Train encoder-only transformers on raw code snippets.</li>
+          <li>Benchmark against GuessLang and GitHub Linguist baselines.</li>
+          <li>Evaluate accuracy, efficiency, and robustness across model families.</li>
+          <li>Scale training with distributed multi-GPU infrastructure.</li>
+        </ul>
+        <p><strong>Stack:</strong> PyTorch, Hugging Face Transformers, W&amp;B, CUDA.</p>
+      </div>
+
+      <div class="section">
+        <h3>Dataset</h3>
+        <p>
+          We leverage GuessLang and a larger custom dataset with 42 million+ code samples spanning
+          319 languages to capture syntax variability and real-world repository diversity.
+        </p>
+        <div class="placeholder">Placeholder: Dataset diagram or language distribution chart.</div>
+      </div>
+
+      <div class="section">
+        <h3>Evaluation Pipeline</h3>
+        <p>
+          A unified evaluation pipeline compares pre-trained encoders and custom-trained architectures
+          across accuracy, efficiency, and robustness. Models are benchmarked on mixed-language
+          repositories and ambiguous code snippets.
+        </p>
+        <svg viewBox="0 0 1000 220" width="100%" height="180" role="img" aria-label="Evaluation pipeline diagram">
+          <rect x="10" y="40" width="180" height="90" rx="14" fill="#eef2ff" stroke="#2563eb" stroke-width="4"></rect>
+          <text x="100" y="90" text-anchor="middle" font-size="26" fill="#0f172a">Data</text>
+          <text x="100" y="118" text-anchor="middle" font-size="20" fill="#475569">42M+ samples</text>
+
+          <rect x="220" y="40" width="180" height="90" rx="14" fill="#fdf2ff" stroke="#7c3aed" stroke-width="4"></rect>
+          <text x="310" y="90" text-anchor="middle" font-size="24" fill="#0f172a">Encoders</text>
+          <text x="310" y="118" text-anchor="middle" font-size="20" fill="#475569">Train &amp; fine-tune</text>
+
+          <rect x="430" y="40" width="180" height="90" rx="14" fill="#ecfeff" stroke="#0891b2" stroke-width="4"></rect>
+          <text x="520" y="90" text-anchor="middle" font-size="24" fill="#0f172a">Inference</text>
+          <text x="520" y="118" text-anchor="middle" font-size="20" fill="#475569">Language ID</text>
+
+          <rect x="640" y="40" width="180" height="90" rx="14" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"></rect>
+          <text x="730" y="90" text-anchor="middle" font-size="24" fill="#0f172a">Metrics</text>
+          <text x="730" y="118" text-anchor="middle" font-size="20" fill="#475569">Accuracy · Efficiency</text>
+
+          <rect x="850" y="40" width="140" height="90" rx="14" fill="#fff7ed" stroke="#ea580c" stroke-width="4"></rect>
+          <text x="920" y="90" text-anchor="middle" font-size="24" fill="#0f172a">Report</text>
+          <text x="920" y="118" text-anchor="middle" font-size="20" fill="#475569">Benchmarks</text>
+
+          <line x1="190" y1="85" x2="220" y2="85" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
+          <line x1="400" y1="85" x2="430" y2="85" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
+          <line x1="610" y1="85" x2="640" y2="85" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
+          <line x1="820" y1="85" x2="850" y2="85" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
+
+          <defs>
+            <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#0f172a"></path>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="section">
+        <h3>Results & Contributions</h3>
+        <ul>
+          <li>Established a systematic benchmark for lightweight language ID models.</li>
+          <li>Quantified accuracy-efficiency tradeoffs for deployment.</li>
+          <li>Produced research artifacts for open-source release and publication.</li>
+        </ul>
+        <div class="placeholder">Placeholder: Accuracy curve or confusion matrix.</div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="section">
+        <h3>Impact & Applications</h3>
+        <p>
+          PECAN enables stronger language detection for IDE tooling, repository analytics, and AI-driven
+          software analysis. The lightweight architecture supports deployment in real-world systems
+          where latency and compute budgets are constrained.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Contact</h3>
+        <p><strong>Email:</strong> ialam2@lsu.edu</p>
+        <p><strong>Website:</strong> https://ialam04.github.io</p>
+        <div class="placeholder">Placeholder: QR code to project page.</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
