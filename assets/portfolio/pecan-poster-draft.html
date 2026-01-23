@@ -117,8 +117,14 @@
 
     .section.big-text p,
     .section.big-text li {
+      font-size: 1.7rem;
+      line-height: 1.8;
+    }
+
+    .section.medium-text p,
+    .section.medium-text li {
       font-size: 1.55rem;
-      line-height: 1.75;
+      line-height: 1.7;
     }
 
     .section ul {
@@ -217,7 +223,7 @@
         </div>
       </div>
 
-      <div class="section big-text">
+      <div class="section medium-text">
         <h3>Approach</h3>
         <ul>
           <li>Train encoder-only transformers on raw code snippets.</li>
@@ -257,38 +263,9 @@
           <li><strong>GitHub Linguist:</strong> Pipeline integration without Docker</li>
           <li><strong>highlight.js / GPT OSS:</strong> Additional baseline checks</li>
         </ul>
-        <svg viewBox="0 0 1100 300" width="100%" height="360" role="img" aria-label="Evaluation pipeline diagram" style="margin-top: 1rem;">
-          <rect x="10" y="70" width="200" height="120" rx="18" fill="#eef2ff" stroke="#2563eb" stroke-width="4"></rect>
-          <text x="110" y="125" text-anchor="middle" font-size="30" fill="#0f172a">Data</text>
-          <text x="110" y="158" text-anchor="middle" font-size="24" fill="#475569">42M+ samples</text>
-
-          <rect x="240" y="70" width="200" height="120" rx="18" fill="#fdf2ff" stroke="#7c3aed" stroke-width="4"></rect>
-          <text x="340" y="125" text-anchor="middle" font-size="28" fill="#0f172a">Encoders</text>
-          <text x="340" y="158" text-anchor="middle" font-size="24" fill="#475569">Train &amp; fine-tune</text>
-
-          <rect x="470" y="70" width="200" height="120" rx="18" fill="#ecfeff" stroke="#0891b2" stroke-width="4"></rect>
-          <text x="570" y="125" text-anchor="middle" font-size="28" fill="#0f172a">Inference</text>
-          <text x="570" y="158" text-anchor="middle" font-size="24" fill="#475569">Language ID</text>
-
-          <rect x="700" y="70" width="200" height="120" rx="18" fill="#f0fdf4" stroke="#16a34a" stroke-width="4"></rect>
-          <text x="800" y="125" text-anchor="middle" font-size="28" fill="#0f172a">Metrics</text>
-          <text x="800" y="158" text-anchor="middle" font-size="24" fill="#475569">Accuracy · Efficiency</text>
-
-          <rect x="930" y="70" width="160" height="120" rx="18" fill="#fff7ed" stroke="#ea580c" stroke-width="4"></rect>
-          <text x="1010" y="125" text-anchor="middle" font-size="28" fill="#0f172a">Report</text>
-          <text x="1010" y="158" text-anchor="middle" font-size="24" fill="#475569">Benchmarks</text>
-
-          <line x1="210" y1="130" x2="230" y2="130" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
-          <line x1="440" y1="130" x2="460" y2="130" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
-          <line x1="670" y1="130" x2="690" y2="130" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
-          <line x1="900" y1="130" x2="920" y2="130" stroke="#0f172a" stroke-width="6" marker-end="url(#arrow)"></line>
-
-          <defs>
-            <marker id="arrow" markerWidth="8" markerHeight="8" refX="5" refY="3" orient="auto">
-              <path d="M0,0 L6,3 L0,6 Z" fill="#0f172a"></path>
-            </marker>
-          </defs>
-        </svg>
+        <div style="margin-top: 1rem;">
+          <img src="evalpipeline.png" alt="Evaluation pipeline overview" style="width: 100%; border-radius: 12px; border: 2px solid #e2e8f0;">
+        </div>
       </div>
 
       <div class="section">
