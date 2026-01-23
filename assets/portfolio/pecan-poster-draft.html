@@ -34,6 +34,27 @@
       padding: 0.75in;
     }
 
+    .poster-scale {
+      transform: scale(0.25);
+      transform-origin: top center;
+    }
+
+    @media screen and (max-width: 1400px) {
+      .poster-scale {
+        transform: scale(0.2);
+      }
+    }
+
+    @media print {
+      .poster-scale {
+        transform: none;
+      }
+      .poster {
+        width: 48in;
+        min-height: 36in;
+      }
+    }
+
     .draft-banner {
       text-align: center;
       font-size: 2.5rem;
@@ -141,14 +162,15 @@
   </style>
 </head>
 <body>
-  <div class="poster">
+  <div class="poster-scale">
+    <div class="poster">
     <div class="draft-banner">Draft</div>
 
     <header class="title">
       <h1>PECAN: Programming Encoder Classification Analysis Network</h1>
       <h2>Lightweight Transformer Encoders for Programming Language Identification</h2>
       <div class="meta">
-        Ibrahim Alam · Dr. James Ghawaly · Jackson Descant<br>
+        Dr. James Ghawaly · Ibrahim Alam · Jackson Descant<br>
         AISX Lab · Louisiana State University
       </div>
       <div class="meta">Stanford Research Conference 2026</div>
@@ -285,6 +307,7 @@
         <div class="placeholder">Placeholder: QR code to project page.</div>
       </div>
     </section>
+    </div>
   </div>
 </body>
 </html>
