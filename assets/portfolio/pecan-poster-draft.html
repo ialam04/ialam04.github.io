@@ -216,7 +216,8 @@
         <ul>
           <li>Train encoder-only transformers on raw code snippets.</li>
           <li>Benchmark against GuessLang and GitHub Linguist baselines.</li>
-          <li>Evaluate accuracy, efficiency, and robustness across model families.</li>
+          <li>Evaluate accuracy, efficiency, and robustness across model families and baselines.</li>
+          <li>Run GuessLang in Docker; run Linguist, highlight.js, and GPT OSS inside the unified pipeline.</li>
           <li>Scale training with distributed multi-GPU infrastructure.</li>
         </ul>
         <p><strong>Stack:</strong> PyTorch, Hugging Face Transformers, W&amp;B, CUDA.</p>
@@ -250,7 +251,7 @@
           <li><strong>GitHub Linguist:</strong> Pipeline integration without Docker</li>
           <li><strong>highlight.js / GPT OSS:</strong> Additional baseline checks</li>
         </ul>
-        <svg viewBox="0 0 1000 220" width="100%" height="180" role="img" aria-label="Evaluation pipeline diagram">
+        <svg viewBox="0 0 1000 220" width="100%" height="240" role="img" aria-label="Evaluation pipeline diagram" style="margin-top: 0.75rem;">
           <rect x="10" y="40" width="180" height="90" rx="14" fill="#eef2ff" stroke="#2563eb" stroke-width="4"></rect>
           <text x="100" y="90" text-anchor="middle" font-size="26" fill="#0f172a">Data</text>
           <text x="100" y="118" text-anchor="middle" font-size="20" fill="#475569">42M+ samples</text>
