@@ -1,41 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-label="Language distribution chart">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-label="Language distribution chart">
 <rect x="0" y="0" width="100%" height="100%" fill="#ffffff"/>
-<text x="220" y="24" font-size="20" fill="#0f172a" font-family="Inter, Arial, sans-serif">Top languages by rows (train split, partial stats)</text>
-<text x="210" y="58.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">KiCad</text>
-<rect x="220" y="40" width="740" height="27" fill="#2563eb" rx="6"/>
-<text x="968" y="58.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">750,311</text>
-<text x="210" y="93.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">Eagle</text>
-<rect x="220" y="75" width="368" height="27" fill="#2563eb" rx="6"/>
-<text x="596" y="93.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">373,771</text>
-<text x="210" y="128.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">PostScript</text>
-<rect x="220" y="110" width="298" height="27" fill="#2563eb" rx="6"/>
-<text x="526" y="128.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">302,345</text>
-<text x="210" y="163.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">SMT</text>
-<rect x="220" y="145" width="263" height="27" fill="#2563eb" rx="6"/>
-<text x="491" y="163.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">266,828</text>
-<text x="210" y="198.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">G-code</text>
-<rect x="220" y="180" width="233" height="27" fill="#2563eb" rx="6"/>
-<text x="461" y="198.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">236,656</text>
-<text x="210" y="233.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">Gnuplot</text>
-<rect x="220" y="215" width="220" height="27" fill="#2563eb" rx="6"/>
-<text x="448" y="233.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">223,506</text>
-<text x="210" y="268.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">Gettext-Catalog</text>
-<rect x="220" y="250" width="204" height="27" fill="#2563eb" rx="6"/>
-<text x="432" y="268.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">207,691</text>
-<text x="210" y="303.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">Web-Ontology-Language</text>
-<rect x="220" y="285" width="204" height="27" fill="#2563eb" rx="6"/>
-<text x="432" y="303.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">207,017</text>
-<text x="210" y="338.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">Max</text>
-<rect x="220" y="320" width="151" height="27" fill="#2563eb" rx="6"/>
-<text x="379" y="338.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">153,867</text>
-<text x="210" y="373.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">edn</text>
-<rect x="220" y="355" width="149" height="27" fill="#2563eb" rx="6"/>
-<text x="377" y="373.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">151,291</text>
-<text x="210" y="408.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">WebAssembly</text>
-<rect x="220" y="390" width="142" height="27" fill="#2563eb" rx="6"/>
-<text x="370" y="408.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">144,051</text>
-<text x="210" y="443.9" text-anchor="end" font-size="16" fill="#0f172a" font-family="Inter, Arial, sans-serif">Mathematica</text>
-<rect x="220" y="425" width="141" height="27" fill="#2563eb" rx="6"/>
-<text x="369" y="443.9" font-size="14" fill="#475569" font-family="Inter, Arial, sans-serif">143,284</text>
-<text x="220" y="496" font-size="14" fill="#64748b" font-family="Inter, Arial, sans-serif">Source: Hugging Face datasets server stats (partial: True) · Rows analyzed: 9,900,000</text>
+<text x="300" y="30" font-size="20" fill="#1f2937" font-family="Inter, Arial, sans-serif">Top 20 languages by rows (full dataset)</text>
+<text x="290" y="64.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">KiCad</text>
+<rect x="300" y="50" width="760" height="20" fill="#6d28d9" rx="6"/>
+<text x="1068" y="64.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">3,421,840 (8.13%)</text>
+<text x="290" y="94.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Jupyter-Notebook</text>
+<rect x="300" y="80" width="386" height="20" fill="#6d28d9" rx="6"/>
+<text x="694" y="94.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">1,742,079 (4.14%)</text>
+<text x="290" y="124.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Eagle</text>
+<rect x="300" y="110" width="266" height="20" fill="#6d28d9" rx="6"/>
+<text x="574" y="124.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">1,200,763 (2.85%)</text>
+<text x="290" y="154.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">PostScript</text>
+<rect x="300" y="140" width="251" height="20" fill="#6d28d9" rx="6"/>
+<text x="559" y="154.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">1,130,758 (2.69%)</text>
+<text x="290" y="184.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">G-code</text>
+<rect x="300" y="170" width="224" height="20" fill="#6d28d9" rx="6"/>
+<text x="532" y="184.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">1,009,587 (2.40%)</text>
+<text x="290" y="214.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">CSV</text>
+<rect x="300" y="200" width="170" height="20" fill="#6d28d9" rx="6"/>
+<text x="478" y="214.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">766,841 (1.82%)</text>
+<text x="290" y="244.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Gnuplot</text>
+<rect x="300" y="230" width="169" height="20" fill="#6d28d9" rx="6"/>
+<text x="477" y="244.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">763,443 (1.81%)</text>
+<text x="290" y="274.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">SMT</text>
+<rect x="300" y="260" width="168" height="20" fill="#6d28d9" rx="6"/>
+<text x="476" y="274.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">759,455 (1.80%)</text>
+<text x="290" y="304.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Gettext-Catalog</text>
+<rect x="300" y="290" width="160" height="20" fill="#6d28d9" rx="6"/>
+<text x="468" y="304.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">723,040 (1.72%)</text>
+<text x="290" y="334.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Web-Ontology-Language</text>
+<rect x="300" y="320" width="158" height="20" fill="#6d28d9" rx="6"/>
+<text x="466" y="334.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">713,162 (1.69%)</text>
+<text x="290" y="364.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Max</text>
+<rect x="300" y="350" width="143" height="20" fill="#6d28d9" rx="6"/>
+<text x="451" y="364.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">644,420 (1.53%)</text>
+<text x="290" y="394.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">edn</text>
+<rect x="300" y="380" width="140" height="20" fill="#6d28d9" rx="6"/>
+<text x="448" y="394.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">633,507 (1.50%)</text>
+<text x="290" y="424.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">WebAssembly</text>
+<rect x="300" y="410" width="121" height="20" fill="#6d28d9" rx="6"/>
+<text x="429" y="424.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">548,161 (1.30%)</text>
+<text x="290" y="454.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">YANG</text>
+<rect x="300" y="440" width="108" height="20" fill="#6d28d9" rx="6"/>
+<text x="416" y="454.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">486,603 (1.16%)</text>
+<text x="290" y="484.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Mathematica</text>
+<rect x="300" y="470" width="106" height="20" fill="#6d28d9" rx="6"/>
+<text x="414" y="484.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">481,487 (1.14%)</text>
+<text x="290" y="514.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Zig</text>
+<rect x="300" y="500" width="90" height="20" fill="#6d28d9" rx="6"/>
+<text x="398" y="514.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">408,247 (0.97%)</text>
+<text x="290" y="544.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">CSS</text>
+<rect x="300" y="530" width="79" height="20" fill="#6d28d9" rx="6"/>
+<text x="387" y="544.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">359,341 (0.85%)</text>
+<text x="290" y="574.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">VHDL</text>
+<rect x="300" y="560" width="76" height="20" fill="#6d28d9" rx="6"/>
+<text x="384" y="574.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">342,481 (0.81%)</text>
+<text x="290" y="604.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Lasso</text>
+<rect x="300" y="590" width="72" height="20" fill="#6d28d9" rx="6"/>
+<text x="380" y="604.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">328,648 (0.78%)</text>
+<text x="290" y="634.0" text-anchor="end" font-size="16" fill="#1f2937" font-family="Inter, Arial, sans-serif">Common-Lisp</text>
+<rect x="300" y="620" width="71" height="20" fill="#6d28d9" rx="6"/>
+<text x="379" y="634.0" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">323,761 (0.77%)</text>
+<text x="300" y="696" font-size="14" fill="#6b7280" font-family="Inter, Arial, sans-serif">Source: Pecan512 full dataset distribution (n=42,093,925, 319 languages)</text>
 </svg>
