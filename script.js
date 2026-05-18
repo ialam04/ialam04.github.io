@@ -198,10 +198,11 @@ function initializeTypingEffect() {
     if (!subtitle) return;
 
     const roles = [
-        'Computer Science Student & Software Developer',
-        'AI/ML Researcher & Full-Stack Developer',
-        'LSU Stamps Scholar & Innovation Enthusiast',
-        'Problem Solver & Technology Leader'
+        'Software Engineer | AI Researcher',
+        'Incoming MSCS @ UNC-Chapel Hill',
+        'Machine Learning Systems Builder',
+        'Full-Stack Developer for Applied AI',
+        'NLP and LLM Evaluation Practitioner'
     ];
     
     let currentRole = 0;
@@ -427,8 +428,8 @@ window.addEventListener('load', function() {
 function shareProfile() {
     if (navigator.share) {
         navigator.share({
-            title: 'Ibrahim Alam - Computer Science Student & Developer',
-            text: 'Check out Ibrahim Alam\'s portfolio - Computer Science student at LSU specializing in AI/ML and full-stack development.',
+            title: 'Ibrahim Alam - Software Engineer & AI Researcher',
+            text: 'Check out Ibrahim Alam\'s portfolio focused on software engineering, AI systems, and applied research.',
             url: window.location.href
         }).catch(console.error);
     } else {
