@@ -297,3 +297,6 @@ section:first-of-type { border-top: 0; }
   background: var(--accent-soft); color: var(--text); font-size: 15.5px;
 }
 .tag-row { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.work-thumb.square { aspect-ratio: 1 / 1; }
+.figure-narrow { max-width: 560px; margin-left: auto; margin-right: auto; }
