@@ -1,219 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PECAN - Ibrahim Alam</title>
-    <meta name="description" content="PECAN (Programming Encoder Classification Analysis Network): Advancing Lightweight AI for Programming Language Identification - Research project at LSU AISX Lab">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .project-hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        .project-hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .project-hero .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            opacity: 0.9;
-        }
-        
-        .project-hero .advisor {
-            font-size: 1rem;
-            opacity: 0.8;
-        }
-        
-        .project-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 3rem 1rem;
-        }
-        
-        .section {
-            margin-bottom: 3rem;
-        }
-        
-        .section h2 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-        }
-        
-        .section h3 {
-            color: var(--text-primary);
-            font-size: 1.3rem;
-            margin: 1.5rem 0 0.8rem 0;
-            font-weight: 600;
-        }
-        
-        .section p, .section li {
-            line-height: 1.7;
-            margin-bottom: 1rem;
-        }
-        
-        .section ul {
-            padding-left: 1.5rem;
-        }
-        
-        .section li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-        
-        .tech-tag {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 0.4rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        
-        .back-nav {
-            position: fixed;
-            top: 2rem;
-            left: 2rem;
-            z-index: 1000;
-        }
-        
-        .back-nav a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: white;
-            text-decoration: none;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 0.8rem 1.2rem;
-            border-radius: 30px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-        
-        .back-nav a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
-            border-left: 4px solid var(--accent-color);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-        
-        .metrics {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .metric-card {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        .metric-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            display: block;
-        }
-        
-        .metric-label {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-        
-        @media (max-width: 768px) {
-            .project-hero h1 {
-                font-size: 2rem;
-            }
-            
-            .back-nav {
-                top: 1rem;
-                left: 1rem;
-            }
-            
-            .project-content {
-                padding: 2rem 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PECAN — Ibrahim Alam</title>
+  <meta name="description" content="PECAN (Programming Encoder Classification Analysis Network): encoder models for programming-language identification across 319 languages, from LSU's AISX Lab.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232563eb'/><text x='50' y='64' font-family='Arial' font-size='40' font-weight='bold' text-anchor='middle' fill='white'>IA</text></svg>">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="site.css?v=20261023">
 </head>
 <body>
-    <nav class="back-nav">
-        <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-            Back to Portfolio
-        </a>
-    </nav>
 
-    <header class="project-hero">
-        <div class="container">
-            <h1>PECAN</h1>
-            <p class="subtitle">Programming Encoder Classification Analysis Network</p>
-            <p class="subtitle">Advancing Lightweight AI for Programming Language Identification</p>
-            <p class="advisor">AISX Lab, Louisiana State University – Faculty Advisor: Dr. James Ghawaly | Research Collaborator: Jackson Descant</p>
+  <nav class="nav" aria-label="Main">
+    <div class="container">
+      <a href="index.html" class="nav-name">Ibrahim Alam</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="assets/portfolio/Ibrahim_Alam_Resume_October_2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+        <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <a class="back-link" href="index.html#research"><i class="fas fa-arrow-left"></i>Back to home</a>
+        <h1>PECAN</h1>
+        <p class="lede">Programming Encoder Classification Analysis Network: compact encoder models that identify a code snippet's programming language.</p>
+        <p class="meta">AISX Lab, Louisiana State University · Advisor: Dr. James Ghawaly · Collaborator: Jackson Descant · Sep 2024 – present</p>
+        <div class="link-row">
+          <a class="chip-link" href="assets/portfolio/Ibrahim_Alam_Honors_Thesis_Final.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i>Honors thesis</a>
+          <a class="chip-link" href="assets/portfolio/StanfordPosterPrint.pdf" target="_blank" rel="noopener"><i class="fas fa-image"></i>Poster</a>
         </div>
+      </div>
     </header>
 
-    <main class="project-content">
-        <section class="section">
-            <h2>Overview</h2>
-            <p>
-                PECAN (Programming Encoder Classification Analysis Network) is my LSU AISX Lab research project on lightweight programming language identification, achieving <strong>95.76% accuracy</strong> across 319 languages. This page gives a quick context; the completed honors thesis and poster/paper materials (currently being updated) cover the full methodology, experiments, and results.
-            </p>
-            
-            <div class="highlight-box">
-                <strong>Research Focus:</strong> Accurate language identification with compact models designed for practical use.
-            </div>
-        </section>
+    <section>
+      <div class="container">
+        <h2 class="section-title">Results</h2>
+        <div class="stat-grid">
+          <div class="stat"><span class="stat-num">95.8%</span><span class="stat-label">Accuracy</span></div>
+          <div class="stat"><span class="stat-num">319</span><span class="stat-label">Programming languages</span></div>
+          <div class="stat"><span class="stat-num">28M+</span><span class="stat-label">Training samples</span></div>
+        </div>
+      </div>
+    </section>
 
-        <section class="section">
-            <h2>Research Artifacts</h2>
-            <p>
-                The honors thesis is complete. The conference poster and research paper are currently being updated from that thesis to reflect the latest evaluation results (95.76% accuracy).
-            </p>
-            <div class="highlight-box">
-                <p><strong>PECAN Poster</strong> <em>(being updated)</em></p>
-                <p><a href="/assets/portfolio/StanfordPosterPrint.pdf">Open poster PDF in a new tab →</a></p>
-                <p><strong>Honors Capstone Thesis</strong> <em>(complete; adapting into a paper)</em></p>
-                <p><a href="/assets/portfolio/Ibrahim_Alam_Honors_Thesis_Final.pdf">Open thesis PDF in a new tab →</a></p>
-            </div>
-            <p>
-                <a href="assets/portfolio/Ibrahim_Alam_Resume_June_2026.pdf" class="evidence-link" target="_blank" rel="noopener noreferrer">View Resume (PDF) →</a>
-            </p>
-        </section>
+    <section>
+      <div class="container prose">
+        <h2 class="section-title">Overview</h2>
+        <p>
+          PECAN asks whether compact, fine-tuned encoder models can identify a snippet's programming language accurately
+          across hundreds of languages, and how they compare with established tools and a large language model.
+        </p>
 
-    </main>
+        <h3>What I did</h3>
+        <ul>
+          <li>Trained encoder models on 28M+ samples spanning 319 languages, reaching 95.8% accuracy.</li>
+          <li>Benchmarked the fine-tuned encoders against GPT-OSS-120B, Linguist, highlight.js, and Guesslang.</li>
+          <li>Retrained a Guesslang baseline on our dataset to separate gains from the architecture from gains from the data.</li>
+          <li>Built scalable training and evaluation pipelines with distributed training and hyperparameter tuning.</li>
+          <li>Ran error analysis to find model weaknesses and improve robustness.</li>
+        </ul>
 
-    <script src="script.js"></script>
+        <h3>Status</h3>
+        <p>
+          I defended the honors thesis in May 2026 and presented PECAN at the Stanford Research Conference in April 2026.
+          A paper is in preparation for FORGE, the Conference on AI Foundation Models and Software Engineering.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Figures</h2>
+        <div class="work">
+          <figure class="figure figure-narrow">
+            <img src="assets/portfolio/pecan-per-language-accuracy.png" alt="Top: test fragments per language, split into head, torso and tail. Bottom: per-language accuracy, where GraphCodeBERT-PECAN stays near 0.9 to 1.0 across all 319 languages while SCC++, GPT-OSS 120B and Guesslang drop, especially on rare languages" loading="lazy">
+            <figcaption>Per-language accuracy (21-language moving average) for languages ranked by test-set support. PECAN stays accurate on rare tail languages, where the baselines drop off.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="assets/portfolio/pecan-language-distribution.svg" alt="Bar chart of the 20 most common languages in the PECAN dataset" loading="lazy">
+            <figcaption>The 20 most common languages in the full dataset, by number of rows.</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="assets/portfolio/W&amp;BChartCodebertSweep.png" alt="Weights and Biases chart of a CodeBERT hyperparameter sweep" loading="lazy">
+            <figcaption>A CodeBERT hyperparameter sweep tracked in Weights &amp; Biases.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Stack</h2>
+        <div class="tag-row">
+          <span class="metric">Python</span><span class="metric">PyTorch</span><span class="metric">Hugging Face Transformers</span>
+          <span class="metric">CodeBERT</span><span class="metric">Weights &amp; Biases</span><span class="metric">Distributed training</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Ibrahim Alam</h2>
+          <p><a href="mailto:ibalam@cs.unc.edu">ibalam@cs.unc.edu</a> · Chapel Hill, NC</p>
+        </div>
+        <div class="footer-links">
+          <a class="btn" href="index.html"><i class="fas fa-house"></i>Home</a>
+          <a class="btn" href="assets/portfolio/Ibrahim_Alam_Resume_October_2026.pdf" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i>Resume</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

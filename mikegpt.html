@@ -1,326 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MikeGPT - Ibrahim Alam</title>
-    <meta name="description" content="MikeGPT: AI Assistant for LSU - Retrieval-Augmented Generation system serving 30,000+ students and faculty">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .project-hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        .project-hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .project-hero .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            opacity: 0.9;
-        }
-        
-        .project-hero .advisor {
-            font-size: 1rem;
-            opacity: 0.8;
-        }
-        
-        .project-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 3rem 1rem;
-        }
-        
-        .section {
-            margin-bottom: 3rem;
-        }
-        
-        .section h2 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-        }
-        
-        .section h3 {
-            color: var(--text-primary);
-            font-size: 1.3rem;
-            margin: 1.5rem 0 0.8rem 0;
-            font-weight: 600;
-        }
-        
-        .section p, .section li {
-            line-height: 1.7;
-            margin-bottom: 1rem;
-        }
-        
-        .section ul {
-            padding-left: 1.5rem;
-        }
-        
-        .section li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-        
-        .tech-tag {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 0.4rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        
-        .back-nav {
-            position: fixed;
-            top: 2rem;
-            left: 2rem;
-            z-index: 1000;
-        }
-        
-        .back-nav a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: white;
-            color: var(--primary-color);
-            padding: 0.6rem 1.2rem;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .back-nav a:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .metric-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-        }
-        
-        .metric-card .number {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        
-        .metric-card .label {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-        
-        @media (max-width: 768px) {
-            .back-nav {
-                position: static;
-                margin: 1rem;
-            }
-            
-            .project-hero h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MikeGPT — Ibrahim Alam</title>
+  <meta name="description" content="MikeGPT: LSU's retrieval-augmented AI assistant, serving 30,000+ students, faculty, and staff across 38,000+ documents.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232563eb'/><text x='50' y='64' font-family='Arial' font-size='40' font-weight='bold' text-anchor='middle' fill='white'>IA</text></svg>">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="site.css?v=20261023">
 </head>
 <body>
-    <div class="back-nav">
-        <a href="index.html#portfolio">
-            <i class="fas fa-arrow-left"></i>
-            Back to Portfolio
-        </a>
+
+  <nav class="nav" aria-label="Main">
+    <div class="container">
+      <a href="index.html" class="nav-name">Ibrahim Alam</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="assets/portfolio/Ibrahim_Alam_Resume_October_2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+        <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
+  </nav>
 
-    <div class="project-hero">
-        <div class="container">
-            <h1>MikeGPT</h1>
-            <p class="subtitle">AI Assistant Enhancing LSU with Retrieval-Augmented Generation</p>
-            <p class="advisor">Research & Development | LSU AISX Lab</p>
-            <p class="advisor">Advised by Dr. James Ghawaly Jr.</p>
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <a class="back-link" href="index.html#research"><i class="fas fa-arrow-left"></i>Back to home</a>
+        <h1>MikeGPT</h1>
+        <p class="lede">LSU's campus AI assistant: retrieval-augmented generation over the university's own documents.</p>
+        <p class="meta">LSU Office of Academic Affairs &amp; AISX Lab · Advisor: Dr. James Ghawaly Jr. · My role: Machine Learning Software Engineer</p>
+        <div class="link-row">
+          <a class="chip-link" href="https://www.lsu.edu/academicaffairs/mikegpt/index.php" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i>Live site</a>
         </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">At a glance</h2>
+        <div class="stat-grid">
+          <div class="stat"><span class="stat-num">30,000+</span><span class="stat-label">Users</span></div>
+          <div class="stat"><span class="stat-num">38,000+</span><span class="stat-label">Indexed documents</span></div>
+          <div class="stat"><span class="stat-num">95%</span><span class="stat-label">Retrieval hit rate</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container prose">
+        <h2 class="section-title">Overview</h2>
+        <p>
+          MikeGPT answers LSU community questions by combining large language models with retrieval over
+          institution-specific documents. The guiding principle: <strong>retrieval design matters more than model size</strong>.
+          Investing in how context is found and grounded gives accurate, citable answers without relying on ever-larger models.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Architecture</h2>
+        <figure class="figure">
+          <img src="assets/portfolio/llm-workflow-diagram.png" alt="MikeGPT workflow: documents are chunked and embedded; queries are rephrased using chat history, matched with pgvector semantic search, and the retrieved context is passed to the LLM" loading="lazy">
+          <figcaption>Documents are chunked and embedded. Queries are rephrased with chat history, matched with pgvector semantic search, and answered from the retrieved context.</figcaption>
+        </figure>
+        <div class="prose" style="margin-top: 28px;">
+          <h3>Document processing</h3>
+          <ul>
+            <li>Ingests PDFs, web pages, policy documents, and academic resources, with OCR for scanned files.</li>
+            <li>Extracts metadata such as source, date, and department.</li>
+            <li>Chunks documents to preserve meaning while keeping retrieval precise.</li>
+          </ul>
+
+          <h3>Vector search</h3>
+          <ul>
+            <li>PostgreSQL with pgvector stores embeddings for semantic search beyond keyword matching.</li>
+            <li>Indexing is tuned to keep the 38,000+ document corpus fast to search.</li>
+          </ul>
+
+          <h3>Retrieval</h3>
+          <ul>
+            <li>Each agent picks the retrieval style that fits its task, such as FAQ keywording, syllabus filters, or navigational search.</li>
+            <li>The main Mike agent uses self-guided navigational search, from an AISX Lab paper, to gather the best context step by step before answering.</li>
+            <li>Retrieved context stays attached to each answer, so users can see what was used.</li>
+          </ul>
+
+          <h3>Response generation</h3>
+          <ul>
+            <li>Answers cite their source documents.</li>
+            <li>Retrieved context constrains generation to reduce hallucination.</li>
+            <li>Guardrails and automated checks run before a response is delivered.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container prose">
+        <h2 class="section-title">My role</h2>
+        <ul>
+          <li>Engineered the RAG pipeline over 38,000+ documents.</li>
+          <li>Designed the vector database schema and semantic search.</li>
+          <li>Built a custom agent engine for complex, multi-step queries and specialized agents for university domains.</li>
+          <li>Built Django and PostgreSQL backend services on Azure, with a staging service for controlled deployment.</li>
+          <li>Designed and implemented an encrypted, secure document-storage pipeline for sensitive institutional data.</li>
+          <li>Co-presented the project at LSU Discover Day 2025.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Stack</h2>
+        <div class="tag-row">
+          <span class="metric">Python</span><span class="metric">Django</span><span class="metric">PostgreSQL</span>
+          <span class="metric">pgvector</span><span class="metric">Azure</span><span class="metric">Redis</span>
+          <span class="metric">Docker</span><span class="metric">OpenAI API</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container prose">
+        <h2 class="section-title">Team</h2>
+        <p><strong>Advisor:</strong> Dr. James Ghawaly Jr., LSU AISX Lab</p>
+        <p><strong>Collaborators:</strong> Jacob Nguyen, Bibushita Baral, Brandon Walton, Chloe Gray</p>
+        <p><strong>Presentation:</strong> Alam I, Nguyen J, Baral B. "MikeGPT: Enhancing LSU with AI." LSU Discover Day Undergraduate Research and Creativity Conference, April 25, 2025.</p>
+        <p><strong>Support:</strong> LSU Office of Academic Affairs, LSU AISX Lab</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Ibrahim Alam</h2>
+          <p><a href="mailto:ibalam@cs.unc.edu">ibalam@cs.unc.edu</a> · Chapel Hill, NC</p>
+        </div>
+        <div class="footer-links">
+          <a class="btn" href="index.html"><i class="fas fa-house"></i>Home</a>
+          <a class="btn" href="assets/portfolio/Ibrahim_Alam_Resume_October_2026.pdf" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i>Resume</a>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <div class="project-content">
-        <!-- Overview -->
-        <div class="section">
-            <h2>Project Overview</h2>
-            <p>MikeGPT is an AI assistant designed to provide accurate, contextual responses to LSU community queries by combining large language model capabilities with institution-specific knowledge retrieval. The system serves as a bridge between students, faculty, and the vast repository of university information, making knowledge access more intuitive and efficient.</p>
-            
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="number">30,000+</div>
-                    <div class="label">Active Users</div>
-                </div>
-                <div class="metric-card">
-                    <div class="number">38,000+</div>
-                    <div class="label">Indexed Documents</div>
-                </div>
-                <div class="metric-card">
-                    <div class="number">95%</div>
-                    <div class="label">Accuracy Rate</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- System Architecture -->
-        <div class="section">
-            <h2>System Architecture</h2>
-            <p>The system implements a retrieval-augmented generation (RAG) pipeline that preprocesses, indexes, and retrieves relevant information from LSU's extensive document repository before generating responses. This architecture prioritizes retrieval design over model size, enabling accurate responses while maintaining computational efficiency.</p>
-            
-            <h3>Core Components</h3>
-            
-            <h4>1. Document Processing Pipeline</h4>
-            <p>The foundation of MikeGPT's accuracy lies in its sophisticated document processing system:</p>
-            <ul>
-                <li><strong>Multi-format Ingestion:</strong> Processes PDFs, web pages, policy documents, and academic resources</li>
-                <li><strong>OCR Integration:</strong> Handles scanned documents and images, converting them into searchable text</li>
-                <li><strong>Metadata Extraction:</strong> Captures document context including source, date, department, and relevance signals</li>
-                <li><strong>Intelligent Chunking:</strong> Strategically segments documents to preserve semantic meaning while optimizing retrieval</li>
-            </ul>
-            
-            <h4>2. Vector Database</h4>
-            <p>Leveraging PostgreSQL with the pgvector extension for semantic search capabilities:</p>
-            <ul>
-                <li><strong>Embedding Storage:</strong> Documents are converted to high-dimensional vectors capturing semantic meaning</li>
-                <li><strong>Similarity Search:</strong> Enables finding contextually relevant information beyond keyword matching</li>
-                <li><strong>Scalability:</strong> Optimized indexing strategies support the 38,000+ document corpus efficiently</li>
-                <li><strong>Context Preservation:</strong> Chunking strategy balances granularity with contextual coherence</li>
-            </ul>
-            
-            <h4>3. Retrieval Algorithm</h4>
-            <p>Our RAG pipeline picks retrieval methods per agent. The main Mike agent uses a self-guided navigational search (from an AISX Lab paper) that iteratively gathers the best context before generation.</p>
-            <ul>
-                <li><strong>Agent-Specific Retrieval:</strong> Each agent selects the retrieval style that fits its task (e.g., FAQ keywording, syllabus filters, or navigational search)</li>
-                <li><strong>Self-Guided Navigation:</strong> Mike refines its own lookups step by step to reach the most relevant sources</li>
-                <li><strong>Grounded Responses:</strong> Retrieved context is kept with the answer so users can see what was used</li>
-            </ul>
-            
-            <h4>4. Response Generation</h4>
-            <p>Integrates retrieved context with large language model prompting:</p>
-            <ul>
-                <li><strong>Source Citation:</strong> Responses explicitly reference source documents for transparency</li>
-                <li><strong>Factual Grounding:</strong> Retrieved context constrains generation to prevent hallucination</li>
-                <li><strong>Guardrails:</strong> Multiple layers prevent inappropriate content and maintain LSU community standards</li>
-                <li><strong>Response Validation:</strong> Automated checks ensure accuracy before delivery</li>
-            </ul>
-        </div>
-
-        <!-- Technical Stack -->
-        <div class="section">
-            <h2>Technical Implementation</h2>
-            <div class="tech-stack">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Django</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">pgvector</span>
-                <span class="tech-tag">Azure Cloud Services</span>
-                <span class="tech-tag">Redis</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">OpenAI API</span>
-            </div>
-            
-            <h3>Infrastructure</h3>
-            <ul>
-                <li><strong>Cloud Deployment:</strong> Azure cloud infrastructure ensures scalability and reliability</li>
-                <li><strong>Caching Layer:</strong> Redis-based caching reduces latency for frequent queries</li>
-                <li><strong>Load Balancing:</strong> Distributed architecture handles 30,000+ concurrent users</li>
-                <li><strong>Monitoring:</strong> Real-time performance tracking and error detection</li>
-            </ul>
-        </div>
-
-        <!-- Design Philosophy -->
-        <div class="section">
-            <h2>Design Philosophy</h2>
-            <p>MikeGPT embodies a fundamental principle: <strong>retrieval design matters more than model size</strong>. Rather than relying on ever-larger language models, we invested in sophisticated information retrieval, resulting in:</p>
-            
-            <ul>
-                <li><strong>Cost Efficiency:</strong> Smaller models with better retrieval outperform larger models alone</li>
-                <li><strong>Accuracy:</strong> Grounded responses reduce hallucination and improve trustworthiness</li>
-                <li><strong>Transparency:</strong> Source citation enables users to verify information</li>
-                <li><strong>Scalability:</strong> Efficient architecture supports growing user base without proportional cost increase</li>
-            </ul>
-            
-            <p>This approach aligns with my broader conviction that AI should augment human capabilities rather than replace them—providing accurate information while maintaining human oversight and judgment.</p>
-        </div>
-
-        <!-- Impact -->
-        <div class="section">
-            <h2>Impact & Outcomes</h2>
-            <ul>
-                <li><strong>Community Adoption:</strong> Currently serving 30,000+ LSU students, faculty, and staff</li>
-                <li><strong>Query Success Rate:</strong> 95% hit rate demonstrates effective information retrieval</li>
-                <li><strong>Knowledge Access:</strong> Democratized access to university information across 38,000+ documents</li>
-                <li><strong>User Satisfaction:</strong> Positive feedback on response accuracy and helpfulness</li>
-                <li><strong>Custom Agents:</strong> Specialized assistants for different departments and use cases</li>
-            </ul>
-        </div>
-
-        <!-- Research Contributions -->
-        <div class="section">
-            <h2>Research Contributions</h2>
-            <p>Beyond its practical impact, MikeGPT demonstrates important principles for production AI systems:</p>
-            
-            <ul>
-                <li><strong>RAG Architecture:</strong> Validates that thoughtful retrieval design can deliver production-grade results without massive models</li>
-                <li><strong>Privacy by Design:</strong> Strict data handling protocols ensure student query privacy</li>
-                <li><strong>Ethical AI:</strong> Transparency and source citation build trust and accountability</li>
-                <li><strong>Real-world Deployment:</strong> Successfully scaled from prototype to production serving thousands</li>
-            </ul>
-        </div>
-
-        <!-- Team & Acknowledgments -->
-        <div class="section">
-            <h2>Team & Acknowledgments</h2>
-            <p><strong>Research Advisor:</strong> Dr. James Ghawaly Jr., LSU AISX Lab</p>
-            <p><strong>Collaborators:</strong> Jacob Nguyen, Bibushita Baral, Brandon Walton, Chloe Gray</p>
-            <p><strong>Discover Day Presentation:</strong> Alam I, Nguyen J, Baral B. "MikeGPT: Enhancing LSU with AI." LSU Discover Day Undergraduate Research and Creativity Conference, April 25, 2025.</p>
-            <p><strong>Support:</strong> LSU Office of Academic Affairs, LSU AISX Lab</p>
-        </div>
-
-        <!-- Role -->
-        <div class="section">
-            <h2>My Role</h2>
-            <p><strong>Machine Learning Software Engineer</strong></p>
-            <ul>
-                <li>Architected and implemented retrieval-augmented generation pipeline</li>
-                <li>Designed vector database schema and semantic search algorithms</li>
-                <li>Optimized retrieval algorithms achieving 95% accuracy rate</li>
-                <li>Led deployment to production serving 30,000+ users</li>
-                <li>Developed custom agents for specialized university domains</li>
-                <li>Implemented privacy-preserving data handling protocols</li>
-                <li>Co-presented research at LSU Discover Day 2025</li>
-            </ul>
-        </div>
-    </div>
+  <script src="site.js"></script>
 </body>
 </html>
