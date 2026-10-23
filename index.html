@@ -155,21 +155,20 @@
           </article>
 
           <article class="work-item">
-            <div class="work-thumb square"><img src="assets/portfolio/pecan-per-language-accuracy.png" alt="Per-language accuracy across 319 languages: GraphCodeBERT-PECAN stays near 0.9 to 1.0 while SCC++, GPT-OSS 120B and Guesslang fall off, especially on rare languages" loading="lazy"></div>
+            <div class="work-thumb"><img src="assets/portfolio/pecan-language-distribution.svg" alt="Bar chart of the 20 most common programming languages in the PECAN data" loading="lazy"></div>
             <div class="work-body">
               <h3>PECAN: Programming Encoder Classification Analysis Network</h3>
               <div class="work-meta">AISX Lab, LSU · Advisor: Dr. James Ghawaly · Sep 2024 – present</div>
               <p>
-                A benchmark for identifying the language of a raw 512-byte code fragment with no file name, extension,
-                or repository context: 60.2M fragments across 319 languages, with file-disjoint splits. The encoder
-                models I fine-tuned reach 95.8% accuracy, the best of 14 systems evaluated, while off-the-shelf tools
-                collapse on rare languages and a zero-shot 120B-parameter LLM reaches 47%. A paper is in preparation for FORGE.
+                Encoder models that identify a code snippet's programming language. I trained them on 28M+ samples
+                across 319 languages and benchmarked them against GPT-OSS-120B, Linguist, highlight.js, and Guesslang,
+                including a Guesslang baseline retrained on our data to separate architecture gains from data gains.
+                A paper is in preparation.
               </p>
               <div class="metrics">
                 <span class="metric"><b>95.8%</b> accuracy</span>
                 <span class="metric"><b>319</b> languages</span>
-                <span class="metric"><b>60.2M</b> fragments</span>
-                <span class="metric"><b>14</b> systems compared</span>
+                <span class="metric"><b>28M+</b> training samples</span>
               </div>
               <div class="link-row">
                 <a class="chip-link" href="pecan.html"><i class="fas fa-book-open"></i>Overview</a>
