@@ -1,715 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ibrahim Alam - Software Engineer and AI Researcher focused on machine learning systems, full-stack development, and applied research.">
-    <meta name="keywords" content="Ibrahim Alam, Software Engineer, AI Researcher, Machine Learning, NLP, Full Stack, Research">
-    <meta name="author" content="Ibrahim Alam">
-    <title>Ibrahim Alam - Software Engineer & AI Researcher</title>
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ialam04.github.io/">
-    <meta property="og:title" content="Ibrahim Alam - Software Engineer & AI Researcher">
-    <meta property="og:description" content="Software engineer and AI researcher building production ML systems, applied NLP projects, and full-stack applications.">
-    <meta property="og:image" content="https://ialam04.github.io/assets/ibrahim-alam-preview.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ialam04.github.io/">
-    <meta property="twitter:title" content="Ibrahim Alam - Software Engineer & AI Researcher">
-    <meta property="twitter:description" content="Software engineer and AI researcher building production ML systems, applied NLP projects, and full-stack applications.">
-    <meta property="twitter:image" content="https://ialam04.github.io/assets/ibrahim-alam-preview.jpg">
-    
-    <!-- Favicon and PWA -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232563eb'/><text x='50' y='65' font-family='Arial' font-size='40' font-weight='bold' text-anchor='middle' fill='white'>IA</text></svg>">
-    <link rel="apple-touch-icon" href="https://via.placeholder.com/180x180/2563eb/ffffff?text=IA">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Ibrahim Alam">
-    
-    <!-- Stylesheets and Fonts -->
-    <link rel="stylesheet" href="styles.css?v=20251030">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Ibrahim Alam",
-      "jobTitle": "Software Engineer and AI Researcher",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Louisiana State University"
-      },
-      "alumniOf": {
-        "@type": "Organization",
-        "name": "Louisiana State University"
-      },
-      "email": "ialam2@lsu.edu",
-      "url": "https://ialam04.github.io",
-      "sameAs": [
-        "https://github.com/ialam04",
-        "https://www.linkedin.com/in/ibrahimalam04"
-      ],
-      "knowsAbout": ["Software Engineering", "Artificial Intelligence", "Machine Learning", "Natural Language Processing", "Full Stack Development", "Applied Research"]
-    }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim Alam — ML Engineer &amp; Researcher</title>
+  <meta name="description" content="Ibrahim Alam is an MSCS student at UNC Chapel Hill working on machine learning, human-AI interaction, and the evaluation of AI systems. Seeking Summer 2027 internships.">
+  <meta name="author" content="Ibrahim Alam">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ialam04.github.io/">
+  <meta property="og:title" content="Ibrahim Alam — ML Engineer &amp; Researcher">
+  <meta property="og:description" content="MSCS student at UNC Chapel Hill working on machine learning, human-AI interaction, and evaluating AI systems.">
+  <meta property="og:image" content="https://ialam04.github.io/assets/ibrahim-alam.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232563eb'/><text x='50' y='64' font-family='Arial' font-size='40' font-weight='bold' text-anchor='middle' fill='white'>IA</text></svg>">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)">
+
+  <!-- Apply a saved theme before first paint to avoid a flash -->
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="site.css?v=20261023">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ibrahim Alam",
+    "jobTitle": "Graduate Researcher",
+    "affiliation": { "@type": "Organization", "name": "University of North Carolina at Chapel Hill" },
+    "alumniOf": { "@type": "Organization", "name": "Louisiana State University" },
+    "email": "ibalam@cs.unc.edu",
+    "url": "https://ialam04.github.io",
+    "sameAs": ["https://github.com/ialam04", "https://www.linkedin.com/in/ibrahimalam04"],
+    "knowsAbout": ["Machine Learning", "Human-AI Interaction", "Active Learning", "Retrieval-Augmented Generation", "AI Evaluation", "Software Engineering"]
+  }
+  </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Ibrahim Alam</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#publications" class="nav-link">Research & Teaching</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+
+  <nav class="nav" aria-label="Main">
+    <div class="container">
+      <a href="#top" class="nav-name">Ibrahim Alam</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#news">News</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#talks">Talks</a></li>
+        <li><a href="assets/portfolio/Ibrahim_Alam_Resume_October_2026.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+        </button>
+        <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Ibrahim Alam</h1>
+          <p class="hero-role">MSCS student at UNC Chapel Hill · Machine learning, human-AI interaction &amp; AI evaluation</p>
+          <p class="hero-bio">
+            I build AI systems people can rely on, and study how to measure whether they work.
+            I'm a graduate researcher in <strong>VisuaLab</strong> with Dr. Danielle Szafir, working on
+            clinician-in-the-loop active learning. Before UNC, I built <strong>MikeGPT</strong>, a RAG assistant
+            serving 30,000+ users at LSU, and trained the <strong>PECAN</strong> encoder models for programming-language
+            identification. I graduated from LSU summa cum laude with the McLaughlin Medal.
+          </p>
+          <span class="seeking"><span class="dot"></span>Seeking Summer 2027 internships: SWE, ML &amp; research</span>
+          <div class="hero-links">
+            <a class="btn btn-primary" href="assets/portfolio/Ibrahim_Alam_Resume_October_2026.pdf" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i>Resume</a>
+            <a class="btn" href="mailto:ibalam@cs.unc.edu"><i class="fas fa-envelope"></i>Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/ibrahimalam04" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            <a class="btn" href="https://github.com/ialam04" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
+          </div>
+        </div>
+        <img class="hero-photo" src="assets/ibrahim-alam.jpg" alt="Portrait of Ibrahim Alam" width="168" height="168">
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+      <div class="container">
+        <h2 class="section-title">News</h2>
+        <ul class="news">
+          <li><time>Oct 2026</time><span>Started evaluating and improving an internal <strong>RAG system</strong> for Red Stick Solutions through Tri-Core Technologies.</span></li>
+          <li><time>Aug 2026</time><span>Began my <strong>MSCS at UNC Chapel Hill</strong> and joined VisuaLab as a graduate researcher.</span></li>
+          <li><time>May 2026</time><span>Graduated from LSU <strong>summa cum laude</strong>, receiving the McLaughlin Medal and University Medal, and defended my honors thesis on PECAN.</span></li>
+          <li><time>Apr 2026</time><span>Presented <strong>PECAN</strong> at the Stanford Research Conference.</span></li>
+          <li><time>Fall 2025</time><span>Teaching assistant for <strong>AI and LLM Development</strong> at LSU.</span></li>
+          <li><time>Apr 2025</time><span>Presented <strong>MikeGPT</strong> at LSU Discover Day.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <div class="container">
+        <h2 class="section-title">Research &amp; Selected Work</h2>
+        <div class="work">
+
+          <article class="work-item">
+            <div class="work-thumb svg-thumb" aria-hidden="true">
+              <svg viewBox="0 0 220 138" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+                <defs>
+                  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+                  </marker>
+                </defs>
+                <g style="color: var(--text-3)">
+                  <rect x="14" y="48" width="72" height="42" rx="9" fill="var(--surface)" stroke="var(--border)"/>
+                  <text x="50" y="74" text-anchor="middle" font-size="12" fill="var(--text)">Clinician</text>
+                  <rect x="134" y="48" width="72" height="42" rx="9" fill="var(--surface)" stroke="var(--border)"/>
+                  <text x="170" y="74" text-anchor="middle" font-size="12" fill="var(--text)">Model</text>
+                  <path d="M90 58 C110 40, 112 40, 130 58" fill="none" stroke="var(--accent)" stroke-width="1.6" marker-end="url(#ah)" style="color: var(--accent)"/>
+                  <text x="110" y="34" text-anchor="middle" font-size="10" fill="var(--text-2)">labels</text>
+                  <path d="M130 80 C112 98, 110 98, 90 80" fill="none" stroke="currentColor" stroke-width="1.6" marker-end="url(#ah)"/>
+                  <text x="110" y="114" text-anchor="middle" font-size="10" fill="var(--text-2)">predictions</text>
+                </g>
+              </svg>
+            </div>
+            <div class="work-body">
+              <h3>Clinician-in-the-loop active learning for Parkinson's freezing of gait</h3>
+              <div class="work-meta">VisuaLab, UNC Chapel Hill · Advisor: Dr. Danielle Szafir · Aug 2026 – present</div>
+              <p>
+                Designing an active learning system that helps clinicians label precursor signs of freezing of gait,
+                extending a CHI 2024 visual analytics platform for clinical motion data. I'm studying how interface
+                order, showing the model's prediction first versus the raw data first, shapes expert labeling,
+                downstream model calibration, and overreliance on wrong predictions.
+              </p>
+              <div class="metrics">
+                <span class="metric">Active learning</span>
+                <span class="metric">Human-AI interaction</span>
+                <span class="metric">Calibration</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-thumb"><img src="assets/portfolio/pecan-language-distribution.svg" alt="Bar chart of the top 20 programming languages in the PECAN dataset" loading="lazy"></div>
+            <div class="work-body">
+              <h3>PECAN: Programming Encoder Classification Analysis Network</h3>
+              <div class="work-meta">AISX Lab, LSU · Advisor: Dr. James Ghawaly · Sep 2024 – present</div>
+              <p>
+                Encoder models for identifying a code snippet's programming language. I trained them on 28M+ samples
+                across 319 languages and benchmarked them against GPT-OSS-120B, Linguist, highlight.js, and Guesslang,
+                including a Guesslang baseline retrained on our data to separate architecture gains from data gains.
+                A paper is in preparation for FORGE.
+              </p>
+              <div class="metrics">
+                <span class="metric"><b>98.3%</b> accuracy</span>
+                <span class="metric"><b>319</b> languages</span>
+                <span class="metric"><b>28M+</b> training samples</span>
+              </div>
+              <div class="link-row">
+                <a class="chip-link" href="pecan.html"><i class="fas fa-book-open"></i>Overview</a>
+                <a class="chip-link" href="assets/portfolio/Ibrahim_Alam_Honors_Thesis_Final.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i>Honors thesis</a>
+                <a class="chip-link" href="assets/portfolio/StanfordPosterPrint.pdf" target="_blank" rel="noopener"><i class="fas fa-image"></i>Poster</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-item">
+            <div class="work-thumb"><img src="assets/portfolio/llm-workflow-diagram.png" alt="MikeGPT retrieval workflow: query rephrasing, pgvector semantic search, context, and LLM response" loading="lazy"></div>
+            <div class="work-body">
+              <h3>MikeGPT: LSU's campus AI assistant</h3>
+              <div class="work-meta">LSU Office of Academic Affairs · ML Software Developer Intern · May 2025 – May 2026</div>
+              <p>
+                A retrieval-augmented assistant over 38,000+ institutional documents. I built the RAG pipeline,
+                a custom agent engine for multi-step queries, Django and PostgreSQL backend services on Azure, and an
+                encrypted document-storage pipeline for sensitive data.
+              </p>
+              <div class="metrics">
+                <span class="metric"><b>30,000+</b> users</span>
+                <span class="metric"><b>38,000+</b> documents</span>
+              </div>
+              <div class="link-row">
+                <a class="chip-link" href="https://www.lsu.edu/academicaffairs/mikegpt/index.php" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i>Live site</a>
+                <a class="chip-link" href="mikegpt.html"><i class="fas fa-diagram-project"></i>Architecture</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="xp">
+          <div class="xp-item">
+            <h3>Graduate Researcher</h3>
+            <span class="xp-date">Aug 2026 – present</span>
+            <span class="xp-org">VisuaLab, UNC Chapel Hill</span>
+          </div>
+          <div class="xp-item">
+            <h3>Software Developer</h3>
+            <span class="xp-date">May 2024 – present</span>
+            <span class="xp-org">Tri-Core Technologies, Baton Rouge</span>
+            <ul>
+              <li>Evaluating and improving an internal RAG system for Red Stick Solutions, a cybersecurity and AI-governance firm; designing an evaluation framework for retrieval quality and answer accuracy.</li>
+              <li>Maintain .NET full-stack systems for the Louisiana Department of Insurance, including the Regulatory Management System and Employee Portal used by thousands of people.</li>
+              <li>Delivered 10+ features and fixes, including faster producer/adjuster search.</li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+          </div>
+          <div class="xp-item">
+            <h3>Research Assistant</h3>
+            <span class="xp-date">Sep 2024 – present</span>
+            <span class="xp-org">AISX Lab, Louisiana State University</span>
+          </div>
+          <div class="xp-item">
+            <h3>Machine Learning Software Developer Intern</h3>
+            <span class="xp-date">May 2025 – May 2026</span>
+            <span class="xp-org">LSU Office of Academic Affairs</span>
+          </div>
+          <div class="xp-item">
+            <h3>Teaching Assistant, AI and LLM Development</h3>
+            <span class="xp-date">Fall 2025</span>
+            <span class="xp-org">LSU Division of Computer Science and Engineering</span>
+          </div>
+          <div class="xp-item">
+            <h3>Undergraduate Researcher, VR</h3>
+            <span class="xp-date">Jan 2024 – May 2024</span>
+            <span class="xp-org">LSU Division of Computer Science and Engineering</span>
+          </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Ibrahim Alam</h1>
-                <h2 class="hero-subtitle">Software Engineer | AI Researcher</h2>
-                <p class="hero-description">
-                    LSU Computer Science graduate (Summa Cum Laude, GPA 4.267) and incoming MSCS student at UNC-Chapel Hill, building reliable software and practical AI systems.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact / Resume</a>
-                </div>
-                <div class="hero-social">
-                    <a href="mailto:ialam2@lsu.edu" class="social-link" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/ialam04" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ibrahimalam04" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <div class="about-photo">
-                    <img src="assets/ibrahim-alam.jpg" alt="Ibrahim Alam - Software Engineer and AI Researcher" class="profile-photo">
-                </div>
-                <div class="about-text">
-                    <p>
-                        I'm a software engineer and AI researcher focused on machine learning systems, applied NLP,
-                        and production software delivery across academic and industry projects.
-                    </p>
-                    <p>
-                        I recently graduated from LSU with a BS in Computer Science and a Minor in Mathematics, and I am
-                        starting the MSCS program at UNC-Chapel Hill. I focus on high-impact technical outcomes:
-                        improving model performance, shipping maintainable code, and translating research into systems
-                        that support real users.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <h4>Education</h4>
-                                <p>BS Computer Science (Software Engineering)<br>
-                                Minor in Mathematics<br>
-                                Louisiana State University (2026)<br>
-                                GPA: 4.267<br>
-                                Incoming MSCS, UNC-Chapel Hill</p>
-                            </div>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-flask"></i>
-                            <div>
-                                <h4>Research & Teaching</h4>
-                                <p>AI/ML and NLP systems<br>
-                                LLM evaluation and retrieval<br>
-                                Programming-language intelligence<br>
-                                AI/LLM course instruction support</p>
-                            </div>
-                        </div>
-                        <div class="highlight">
-                            <i class="fas fa-award"></i>
-                            <div>
-                                <h4>Honors & Awards</h4>
-                                <p>LSU Stamps Scholarship Recipient<br>
-                                LSU Distinguished Researcher<br>
-                                Tau Beta Pi Engineering Honors Society Member<br>
-                                LSU CXC Distinguished Communicator<br>
-                                LSU Tiger Twelve Member<br>
-                                College Honors, Summa Cum Laude<br>
-                                LSU McLaughlin Medalist</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <div class="project-head">
+              <h3>Quest Active Desktop</h3>
+              <a href="https://www.linkedin.com/posts/ibrahimalam04_this-past-semester-i-worked-with-dr-david-activity-7198003880335396864-FQeu" target="_blank" rel="noopener" aria-label="Demo video"><i class="fas fa-play-circle"></i></a>
             </div>
+            <p>A Meta Quest 3 desktop environment that builds physical activity into work sessions, replacing mouse input with gestures and movement.</p>
+            <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">VR</span></div>
+          </div>
+          <div class="project">
+            <div class="project-head">
+              <h3>Probabilistic Language Model</h3>
+              <a href="https://github.com/ialam04/N-Gram_and_BPE_Tokenizer" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>An N-gram language model and BPE tokenizer built from scratch in Python to benchmark tokenization and next-word prediction.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">NLP</span></div>
+          </div>
+          <div class="project">
+            <div class="project-head">
+              <h3>Secure File Management Application</h3>
+              <a href="https://github.com/ialam04/secure-file-management-application" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>A Blazor app with LDAP authentication, role-based access control, and encrypted messaging.</p>
+            <div class="tags"><span class="tag">C#</span><span class="tag">Blazor</span><span class="tag">ASP.NET</span></div>
+          </div>
+          <div class="project">
+            <div class="project-head">
+              <h3>Modified ANSI C Compiler</h3>
+              <a href="https://github.com/ialam04/ModifiedANSICLanguageCompiler" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>A full compiler in Java covering lexing, parsing, semantic analysis, and code generation for an extended ANSI C.</p>
+            <div class="tags"><span class="tag">Java</span><span class="tag">JLex</span><span class="tag">CUP</span></div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <!-- Research Experience -->
-                <div class="timeline-item">
-                    <div class="timeline-marker research"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Undergraduate Researcher - AISX Lab</h3>
-                            <span class="timeline-date">September 2024 - Present</span>
-                        </div>
-                        <h4>LSU Division of Computer Science and Engineering</h4>
-                        <ul>
-                            <li>Fine-tuning transformer-based models (CodeBERT) for programming language identification across 319 languages</li>
-                            <li>Working with 42M+ labeled code dataset for model training and evaluation</li>
-                            <li>Designing scalable training pipelines with distributed computing and hyperparameter optimization</li>
-                            <li>Completed honors thesis; updating conference poster and co-authoring research paper with 95.76% accuracy results</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span class="tech">PyTorch</span>
-                            <span class="tech">HuggingFace</span>
-                            <span class="tech">Python</span>
-                            <span class="tech">W&B</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Work Experience -->
-                <div class="timeline-item">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Machine Learning Software Developer Intern</h3>
-                            <span class="timeline-date">May 2025 - Present</span>
-                        </div>
-                        <h4>LSU Office of Academic Affairs</h4>
-                        <ul>
-                            <li>Co-developed MikeGPT, AI assistant serving 30,000+ LSU students, faculty, and staff</li>
-                            <li>Implemented LLM-based information retrieval workflows with advanced prompt engineering</li>
-                            <li>Integrated with official LSU data sources ensuring security and reliability</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span class="tech">Python</span>
-                            <span class="tech">Django</span>
-                            <span class="tech">OpenAI</span>
-                            <span class="tech">Azure</span>
-                            <span class="tech">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Developer</h3>
-                            <span class="timeline-date">May 2024 - Present</span>
-                        </div>
-                        <h4>Tri-Core Technologies LLC</h4>
-                        <ul>
-                            <li>Enhanced system reliability for Louisiana Department of Insurance (LDI)</li>
-                            <li>Implemented 10+ bug fixes and new features improving operational efficiency</li>
-                            <li>Collaborated with senior developers on client-specific solutions</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span class="tech">C#</span>
-                            <span class="tech">.NET MVC</span>
-                            <span class="tech">SQL</span>
-                            <span class="tech">JavaScript</span>
-                            <span class="tech">Entity Framework</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker teaching"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Teaching Assistant - AI and LLM Development</h3>
-                            <span class="timeline-date">Fall 2025</span>
-                        </div>
-                        <h4>LSU Division of Computer Science and Engineering</h4>
-                        <ul>
-                            <li>Supporting student project teams in developing AI-centric applications</li>
-                            <li>Facilitating weekly check-ins and managing classroom operations</li>
-                            <li>Coordinating between students, faculty, and industry sponsors</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Additional Research -->
-                <div class="timeline-item">
-                    <div class="timeline-marker research"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>VR Research - Meta Quest Development</h3>
-                            <span class="timeline-date">January 2024 - May 2024</span>
-                        </div>
-                        <h4>LSU Division of Computer Science and Engineering</h4>
-                        <ul>
-                            <li>Developed VR application for Meta Quest 3 integrating exercise into work routines</li>
-                            <li>Created VR desktop environment enabling keyboard functionality with physical activity</li>
-                            <li>Designed interactions replacing mouse input with physical movement</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span class="tech">Unity</span>
-                            <span class="tech">C#</span>
-                            <span class="tech">VR Development</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- Talks -->
+    <section id="talks">
+      <div class="container">
+        <h2 class="section-title">Talks &amp; Teaching</h2>
+        <ul class="talks">
+          <li>
+            <span class="talk-title">PECAN: Programming Encoder Classification Analysis Network</span><br>
+            Stanford Research Conference, Apr 2026 · LSU Ogden Honors College thesis defense, May 2026
+            <div class="link-row">
+              <a class="chip-link" href="assets/portfolio/StanfordPosterPrint.pdf" target="_blank" rel="noopener"><i class="fas fa-image"></i>Poster</a>
+              <a class="chip-link" href="assets/portfolio/Ibrahim_Alam_Honors_Thesis_Final.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i>Thesis</a>
             </div>
-        </div>
+          </li>
+          <li>
+            <span class="talk-title">Lecture: Evaluating RAG Pipelines</span><br>
+            Retrieval diagnostics, grounding quality, and evaluation strategy
+            <div class="link-row">
+              <a class="chip-link" href="https://youtu.be/wAI0XLhzgEk" target="_blank" rel="noopener"><i class="fab fa-youtube"></i>Video</a>
+            </div>
+          </li>
+          <li>
+            <span class="talk-title">MikeGPT: Enhancing LSU with AI</span><br>
+            Alam I, Biral B, Nguyen J · LSU Discover Day, Apr 2025
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects & Products</h2>
-            <div class="project-groups">
-                <div class="project-group">
-                    <h3 class="project-group-title">Research & Deployments</h3>
-                    <div class="projects-grid projects-grid-featured">
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <h3>MikeGPT - LSU AI Assistant</h3>
-                        <div class="project-links">
-                            <a href="https://www.lsu.edu/academicaffairs/mikegpt/index.php" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View MikeGPT">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                                Co-led MikeGPT, LSU's campus AI assistant. Built and maintained retrieval pipelines,
-                                prompt systems, and evaluation workflows that support reliable responses at university scale.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech">Python</span>
-                        <span class="tech">Django</span>
-                        <span class="tech">PostgreSQL</span>
-                        <span class="tech">OpenAI</span>
-                        <span class="tech">ReactJS</span>
-                        <span class="tech">Azure</span>
-                    </div>
-                    <div class="project-stats">
-                        <div class="stat">
-                            <span class="stat-number">35K+</span>
-                            <span class="stat-label">Users Served</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">38K+</span>
-                            <span class="stat-label">Documents Indexed</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-grid projects-grid-sub">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3>Quest Active Desktop</h3>
-                                <div class="project-links">
-                                    <a href="https://www.linkedin.com/posts/ibrahimalam04_this-past-semester-i-worked-with-dr-david-activity-7198003880335396864-FQeu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEqtnQ0BSlHhbGoW1KcIWsPa1-_VI5UexkE" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Demo Video">
-                                        <i class="fas fa-play-circle"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="project-description">
-                                Prototyped a Meta Quest 3 desktop environment focused on active work sessions, including
-                                gesture-driven controls and usability validation with early testers.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech">Unity</span>
-                                <span class="tech">C#</span>
-                                <span class="tech">WindowsSimulator API</span>
-                                <span class="tech">VR</span>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3>PECAN - Language ID Research</h3>
-                                <div class="project-links">
-                                    <a href="pecan.html" class="project-link" aria-label="Read PECAN case study">
-                                        <i class="fas fa-arrow-up-right-from-square"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <p class="project-description">
-                                Co-developed a lightweight encoder model for programming-language identification,
-                                achieving 95.76% accuracy across 319 languages.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech">PyTorch</span>
-                                <span class="tech">HuggingFace</span>
-                                <span class="tech">Transformers</span>
-                                <span class="tech">Research</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-group">
-                    <h3 class="project-group-title">Industry & Client Delivery</h3>
-                    <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Regulatory Management System</h3>
-                        <div class="project-links">
-                            <a href="https://www.tri-core.net/work/rms/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View RMS Project">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                                Delivered 10+ production fixes and features for Louisiana Department of Insurance systems,
-                                improving reliability and reducing workflow bottlenecks in legacy applications.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech">C#</span>
-                        <span class="tech">.NET MVC</span>
-                        <span class="tech">SQL</span>
-                        <span class="tech">JavaScript</span>
-                        <span class="tech">Entity Framework</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-group">
-                    <h3 class="project-group-title">Course Builds</h3>
-                    <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                                <h3>Secure File Management Application</h3>
-                        <div class="project-links">
-                                    <a href="https://github.com/ialam04/secure-file-management-application" class="project-link" target="_blank" aria-label="View on GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                                Built a security-focused Blazor app with LDAP authentication, role-based access controls,
-                                and encrypted messaging for enterprise collaboration scenarios.
-                    </p>
-                    <div class="project-tech">
-                                <span class="tech">Blazor</span>
-                                <span class="tech">C#</span>
-                                <span class="tech">ASP.NET</span>
-                                <span class="tech">LDAP</span>
-                                <span class="tech">Security</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                                <h3>Modified ANSI C Compiler</h3>
-                        <div class="project-links">
-                                    <a href="https://github.com/ialam04/ModifiedANSICLanguageCompiler" class="project-link" target="_blank" aria-label="View on GitHub">
-                                        <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                                Implemented a full compiler in Java using JLex and CUP, covering lexical analysis, parsing,
-                                semantic analysis, and code generation for an extended ANSI C specification.
-                    </p>
-                    <div class="project-tech">
-                                <span class="tech">Java</span>
-                                <span class="tech">C</span>
-                                <span class="tech">JLex</span>
-                                <span class="tech">CUP</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Probabilistic Language Model</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/ialam04/N-Gram_and_BPE_Tokenizer" class="project-link" target="_blank" aria-label="View on GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                                Built an N-gram language model and BPE tokenizer in Python to benchmark tokenization and
-                                predictive text performance in lightweight NLP pipelines.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech">Python</span>
-                        <span class="tech">NLP</span>
-                        <span class="tech">N-gram</span>
-                        <span class="tech">BPE</span>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Skills & honors -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Honors</h2>
+        <dl class="kv">
+          <dt>AI / ML</dt>
+          <dd>Python, PyTorch, Hugging Face, Weights &amp; Biases, scikit-learn, distributed training, RAG, agent systems, vLLM, pgvector</dd>
+          <dt>Software</dt>
+          <dd>Java, C#, C++, JavaScript, SQL, Django, ASP.NET MVC/Core, React, PostgreSQL, REST APIs, Azure, Docker, Git</dd>
+          <dt>Honors</dt>
+          <dd>McLaughlin Medal (highest GPA in the LSU College of Engineering), University Medal, Stamps Scholar, LSU Distinguished Researcher, LSU Distinguished Communicator, Tau Beta Pi, Tiger Twelve</dd>
+          <dt>Education</dt>
+          <dd>MSCS, UNC Chapel Hill (expected May 2028) · BS Computer Science, Software Engineering concentration, minor in Mathematics, LSU (May 2026), GPA 4.267</dd>
+        </dl>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Full Stack Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ReactJS</span>
-                        <span class="skill-tag">ASP.NET MVC/Core</span>
-                        <span class="skill-tag">Blazor</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Entity Framework</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Azure Cloud Services</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HuggingFace</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Weights & Biases</span>
-                        <span class="skill-tag">OpenAI</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">Transformer Models</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Collaboration & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Jira</span>
-                        <span class="skill-tag">Slack</span>
-                        <span class="skill-tag">Teams</span>
-                        <span class="skill-tag">Microsoft TFS</span>
-                    </div>
-                </div>
-            </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Get in touch</h2>
+          <p><a href="mailto:ibalam@cs.unc.edu">ibalam@cs.unc.edu</a> · Chapel Hill, NC</p>
         </div>
-    </section>
-
-    <!-- Publications & Presentations Section -->
-    <section id="publications" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Research & Teaching</h2>
-            <div class="evidence-category">
-                <h3 class="evidence-title">
-                    <i class="fas fa-podium"></i>
-                    Presentations & Research Outputs
-                </h3>
-                <div class="evidence-grid">
-                    <div class="evidence-card">
-                        <i class="fas fa-chalkboard-teacher evidence-icon"></i>
-                        <h4>Discover Day Presentation: MikeGPT</h4>
-                        <p>Presented system architecture, deployment approach, and impact metrics for LSU's campus AI assistant.</p>
-                        <div class="citation">
-                            <p><strong>Citation:</strong> Alam I, Nguyen J. MikeGPT: Enhancing LSU with AI. 
-                            <em>LSU Discover Day Undergraduate Research and Creativity Conference.</em> 2025 April 25; 
-                            Louisiana State University, Baton Rouge, Louisiana.</p>
-                        </div>
-                    </div>
-
-                    <div class="evidence-card">
-                        <i class="fas fa-video evidence-icon"></i>
-                        <h4>Lecture: Evaluating RAG Pipelines</h4>
-                        <div class="video-embed">
-                            <iframe 
-                                src="https://www.youtube.com/embed/wAI0XLhzgEk?rel=0&modestbranding=1" 
-                                title="Lecture: Evaluating RAG Pipelines" 
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen 
-                                loading="lazy">
-                            </iframe>
-                </div>
-                        <p>Technical lecture segment covering retrieval diagnostics, grounding quality, and evaluation strategy.</p>
-                        <p class="evidence-note">If embed playback is blocked, <a href="https://youtu.be/wAI0XLhzgEk" target="_blank" rel="noopener noreferrer">watch on YouTube</a>.</p>
-                    </div>
-
-                    <div class="evidence-card">
-                        <i class="fas fa-file-alt evidence-icon"></i>
-                        <h4>Stanford Research Conference: PECAN</h4>
-                        <p>Conference presentation on Programming Encoder Classification Analysis Network (PECAN) and language identification results (95.76% accuracy). Poster materials are currently being updated.</p>
-                        <div class="citation">
-                            <p><strong>Citation:</strong> Alam I. PECAN: Programming Encoder Classification Analysis Network.
-                            <em>Stanford Research Conference.</em> 2026 April; Stanford University, Stanford, CA.</p>
-                        </div>
-                    </div>
-
-                    <div class="evidence-card">
-                        <i class="fas fa-file-alt evidence-icon"></i>
-                        <h4>PECAN Research Brief</h4>
-                        <p>Overview of model architecture, dataset scale, and performance outcomes (95.76% accuracy). Honors thesis is complete; poster and paper are currently being updated from it.</p>
-                        <a href="pecan.html" class="evidence-link">Read the summary →</a>
-                    </div>
-
-                    <div class="evidence-card">
-                        <i class="fas fa-diagram-project evidence-icon"></i>
-                        <h4>MikeGPT Technical Playbook</h4>
-                        <p>Documentation of retrieval workflows, governance, and safety controls used in production releases.</p>
-                        <a href="mikegpt.html" class="evidence-link">Dive into the architecture →</a>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-links">
+          <a class="btn" href="assets/portfolio/Ibrahim_Alam_Resume_October_2026.pdf" target="_blank" rel="noopener"><i class="fas fa-file-lines"></i>Resume</a>
+          <a class="btn" href="https://www.linkedin.com/in/ibrahimalam04" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a>
+          <a class="btn" href="https://github.com/ialam04" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a>
         </div>
-    </section>
+      </div>
+      <p class="footer-note">© 2026 Ibrahim Alam · AI tools assisted with drafting, layout, and site implementation; final content and technical decisions are my own.</p>
+    </div>
+  </footer>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-intro">
-                <h3>Open to research and engineering opportunities</h3>
-                <p>
-                    Reach out for software engineering roles, AI/ML collaborations, or research conversations.
-                </p>
-            </div>
-            
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <i class="fas fa-envelope-open"></i>
-                    <h4>Email Me</h4>
-                    <p>Best way to reach me for opportunities, collaborations, or questions</p>
-                    <a href="mailto:ialam2@lsu.edu?subject=Portfolio%20Contact" class="btn btn-primary">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Email
-                    </a>
-                </div>
-                
-                <div class="contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h4>LinkedIn</h4>
-                    <p>Connect with me professionally and view my latest updates</p>
-                    <a href="https://www.linkedin.com/in/ibrahimalam04" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
-                        Connect on LinkedIn
-                    </a>
-                </div>
-                
-                <div class="contact-card">
-                    <i class="fab fa-github"></i>
-                    <h4>GitHub</h4>
-                    <p>Check out my code, projects, and contributions</p>
-                    <a href="https://github.com/ialam04" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                        View GitHub
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <i class="fas fa-file-lines"></i>
-                    <h4>Resume</h4>
-                    <p>View my latest resume (June 2026)</p>
-                    <a href="assets/portfolio/Ibrahim_Alam_Resume_June_2026.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-eye"></i>
-                        View Resume
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h4>Transcript</h4>
-                    <p>View my unofficial academic transcript</p>
-                    <a href="assets/portfolio/Ibrahim_Alam_Unofficial_Transcript.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-eye"></i>
-                        View Transcript
-                    </a>
-                </div>
-            </div>
-            
-            <div class="contact-footer">
-                <div class="direct-contact">
-                    <h4>Prefer to reach out directly?</h4>
-                    <p>
-                        <strong>Email:</strong> <a href="mailto:ialam2@lsu.edu">ialam2@lsu.edu</a> • 
-                        <strong>Location:</strong> Baton Rouge, Louisiana
-                    </p>
-                    <p class="response-time">
-                        <i class="fas fa-clock"></i>
-                        <strong>Response time:</strong> Usually within 24 hours
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2026 Ibrahim Alam.</p>
-                    <p>Software Engineer | AI Researcher</p>
-                    <p class="cxc-note">AI tools assisted with drafting, layout, and site implementation; final content and technical decisions are by Ibrahim Alam.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#publications">Research & Teaching</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <script src="script.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
