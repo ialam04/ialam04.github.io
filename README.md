@@ -145,8 +145,7 @@ This website is deployed using **GitHub Pages**:
 
 ## 🤝 Contact
 
-- **Email**: [ialam2@lsu.edu](mailto:ialam2@lsu.edu)
-- **Phone**: (318) 617-4665
+- **Email**: [ibalam@cs.unc.edu](mailto:ialam2@lsu.edu)
 - **GitHub**: [github.com/ialam04](https://github.com/ialam04)
 - **LinkedIn**: [LinkedIn Profile](https://linkedin.com/in/ibrahim-alam)
 
