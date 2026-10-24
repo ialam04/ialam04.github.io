@@ -133,7 +133,7 @@ section:first-of-type { border-top: 0; }
 
 /* ---------- Hero ---------- */
 .hero { padding: 64px 0 48px; }
-.hero-grid { display: grid; grid-template-columns: 1fr 168px; gap: 40px; align-items: center; }
+.hero-grid { display: grid; grid-template-columns: 1fr 200px; gap: 40px; align-items: center; }
 .hero h1 { font-size: clamp(32px, 5vw, 42px); font-weight: 700; letter-spacing: -.02em; }
 .hero-role { margin-top: 8px; font-size: 17px; color: var(--text-2); }
 .hero-bio { margin-top: 18px; color: var(--text-2); max-width: 600px; }
@@ -147,7 +147,7 @@ section:first-of-type { border-top: 0; }
 .seeking .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
 .hero-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 .hero-photo {
-  width: 168px; height: 168px; border-radius: 50%; object-fit: cover; object-position: center;
+  width: 200px; height: 250px; border-radius: 16px; object-fit: cover; object-position: center top;
   border: 1px solid var(--border); box-shadow: var(--shadow);
 }
 
@@ -247,7 +247,7 @@ section:first-of-type { border-top: 0; }
 
   .hero { padding-top: 40px; }
   .hero-grid { grid-template-columns: 1fr; gap: 24px; }
-  .hero-photo { width: 112px; height: 112px; grid-row: 1; }
+  .hero-photo { width: 140px; height: 175px; grid-row: 1; }
 
   .work-item { grid-template-columns: 1fr; gap: 16px; }
   .projects { grid-template-columns: 1fr; }
