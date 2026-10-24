@@ -163,4 +163,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Built with ❤️ by Ibrahim Alam** | Last updated: September 2025
+**Built with ❤️ by Ibrahim Alam** | Last updated: October 2026
